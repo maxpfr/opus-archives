@@ -284,7 +284,7 @@
         "lines": [
           "{hostName}",
           "{hostAddress}",
-          "{hostPhone}"
+          "Contact: {hostContact}"
         ]
       },
       {

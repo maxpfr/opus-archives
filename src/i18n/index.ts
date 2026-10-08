@@ -31,7 +31,7 @@ const vars: Record<string, string> = {
   publicationDirector: legal.publicationDirector,
   hostName: legal.host.name,
   hostAddress: legal.host.address,
-  hostPhone: legal.host.phone,
+  hostContact: legal.host.contact,
 };
 
 /** French typography: non-breaking spaces before high punctuation and inside guillemets. */

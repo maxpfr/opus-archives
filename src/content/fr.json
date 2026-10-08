@@ -284,13 +284,13 @@
         "lines": [
           "{hostName}",
           "{hostAddress}",
-          "{hostPhone}"
+          "Contact : {hostContact}"
         ]
       },
       {
         "title": "Propriété intellectuelle",
         "lines": [
-          "Les textes de ce site sont la propriété de {companyName}. Toute reproduction sans autorisation préalable est interdite."
+          "Les textes de ce site sont la propriété d'{companyName}. Toute reproduction sans autorisation préalable est interdite."
         ]
       },
       {

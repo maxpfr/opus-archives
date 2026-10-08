@@ -15,8 +15,8 @@ export const site = {
 
   email: 'maxime@opus-archives.com',
 
-  // TODO: phone number not decided. Set to '' to hide the phone line entirely.
-  phone: '{{PHONE}}',
+  // TODO: phone number not supplied. '' hides the phone line on the site.
+  phone: '',
 
   // Whether the English version is linked from the language switch.
   englishEnabled: true,
@@ -37,18 +37,17 @@ export const site = {
     postalCode: '75016',
     city: 'Paris',
     country: 'FR',
-    // TODO: share capital not supplied (required in the mentions légales).
-    shareCapital: '{{CAPITAL_SOCIAL}}',
-    // TODO: RCS registration city not supplied (e.g. "RCS Paris").
-    rcs: '{{RCS}}',
-    // TODO: director of publication not confirmed.
-    publicationDirector: '{{DIRECTEUR_DE_PUBLICATION}}',
-    // Hosting: Netlify (confirmed). TODO: address and phone, to copy from Netlify's own legal pages
-    // (third-party legal notices disagree on the current address).
+    // Source: company record on Pappers (capital after the increase decided on 07/11/2025).
+    shareCapital: '31 298,50 €',
+    rcs: 'RCS Paris',
+    // Président of the SASU.
+    publicationDirector: 'Maxime Pfrimmer',
+    // Address as published in Netlify's own privacy policy and terms of use. Netlify publishes no
+    // phone number, so its contact page is given instead.
     host: {
       name: 'Netlify, Inc.',
-      address: '{{HEBERGEUR_ADRESSE}}',
-      phone: '{{HEBERGEUR_TELEPHONE}}',
+      address: '101 2nd Street, San Francisco, CA 94105, United States',
+      contact: 'https://www.netlify.com/contact/',
     },
   },
 
