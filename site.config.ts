@@ -10,11 +10,10 @@ export const site = {
   // Confirmed: brand chosen by the owner.
   brand: 'Opus Archives',
 
-  // TODO: domain not decided. Bare host, no protocol (e.g. "example.fr").
-  domain: '{{DOMAIN}}',
+  // Bare host, no protocol.
+  domain: 'opus-archives.com',
 
-  // TODO: contact address not decided.
-  email: '{{EMAIL}}',
+  email: 'maxime@opus-archives.com',
 
   // TODO: phone number not decided. Set to '' to hide the phone line entirely.
   phone: '{{PHONE}}',

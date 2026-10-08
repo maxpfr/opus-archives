@@ -34,8 +34,6 @@ En français, les espaces insécables avant `: ; ? ! »` sont ajoutés automatiq
 
 Tous sont centralisés dans `site.config.ts` :
 
-- `{{DOMAIN}}` — domaine (active canonical, hreflang, `og:url`, sitemap, ligne `Sitemap:` de robots.txt, `url` du JSON-LD)
-- `{{EMAIL}}` — adresse de contact (mailto, mentions légales, politique de confidentialité)
 - `{{PHONE}}` — téléphone (mettre `''` pour masquer la ligne)
 - `{{LINKEDIN_URL}}` — profil LinkedIn du fondateur (le lien est masqué tant qu'il n'est pas rempli)
 - `{{CAPITAL_SOCIAL}}`, `{{RCS}}` — mentions obligatoires de l'éditeur
