@@ -1,0 +1,354 @@
+{
+  "meta": {
+    "lang": "fr",
+    "locale": "fr_FR",
+    "title": "{brand} — Valoriser la production écrite de votre entreprise",
+    "description": "{brand} acquiert des licences d'usage non exclusives sur la documentation interne d'entreprises du numérique et la transforme en jeux de données anonymisés pour l'entraînement et l'évaluation de modèles d'IA. Nous n'achetons pas le logiciel."
+  },
+  "a11y": {
+    "skip": "Aller au contenu",
+    "mainNav": "Navigation principale",
+    "langSwitch": "Choix de la langue",
+    "external": "(nouvel onglet)"
+  },
+  "nav": {
+    "useCases": "Cas d'usage",
+    "scope": "Périmètre",
+    "process": "Processus",
+    "protection": "Protection des données",
+    "faq": "Questions",
+    "contact": "Nous contacter"
+  },
+  "hero": {
+    "eyebrow": "Licence d'usage · Anonymisation · Données d'entraînement",
+    "title": "Valoriser la production écrite de votre entreprise.",
+    "lead": "Wikis, tickets, spécifications, historique de code : nous en acquérons une licence d'usage non exclusive, nous les anonymisons, et ils servent uniquement à entraîner et évaluer des modèles d'IA. En toute sécurité et en toute confidentialité.",
+    "pitch": "{brand} acquiert des licences d'usage sur la documentation interne d'entreprises du numérique. Une fois anonymisés, ces contenus servent uniquement à entraîner et évaluer des modèles d'intelligence artificielle. Nous n'achetons pas le logiciel.",
+    "cta": "Nous contacter",
+    "secondary": "Voir le processus",
+    "facts": [
+      "Licence non exclusive",
+      "Pas de reprise du logiciel",
+      "Messageries et données clients exclues",
+      "Exports bruts supprimés après livraison"
+    ]
+  },
+  "useCases": {
+    "title": "Pour qui",
+    "intro": "Une entreprise du numérique produit chaque jour une documentation riche qui ne sert qu'en interne. Elle peut être valorisée à plusieurs moments de la vie de l'entreprise.",
+    "items": [
+      {
+        "title": "Entreprise en activité",
+        "text": "Votre documentation accumulée depuis des années peut générer un revenu sans rien céder de votre activité : la licence est non exclusive et vous restez propriétaire de vos contenus comme de votre logiciel."
+      },
+      {
+        "title": "Fermeture volontaire",
+        "text": "Lors d'une dissolution ou d'une liquidation amiable, la documentation devient un actif valorisable, à condition d'être exportée avant la fermeture des comptes en ligne."
+      },
+      {
+        "title": "Cession ou arrêt d'un produit",
+        "text": "Quand une activité est cédée ou un produit abandonné, la documentation qui le concerne peut être valorisée séparément, dans le respect des engagements pris par ailleurs."
+      },
+      {
+        "title": "Liquidation judiciaire",
+        "text": "Avec le liquidateur et sur autorisation du juge-commissaire : un actif qui ne vaut généralement rien dans la procédure devient une recette pour les créanciers."
+      }
+    ]
+  },
+  "scope": {
+    "title": "Ce que nous achetons, ce que nous n'achetons pas",
+    "intro": "Nous acquérons une licence d'usage non exclusive sur des contenus écrits précis. Le périmètre est fixé par écrit avant toute signature.",
+    "buy": {
+      "title": "Ce que nous licencions",
+      "items": [
+        "Wikis et espaces Notion ou Confluence",
+        "Tickets : Jira, Linear, GitHub Issues",
+        "Spécifications et documents de conception",
+        "Runbooks et postmortems",
+        "Historique des dépôts de code, traité comme une donnée : commits, pull requests, revues, liens vers les tickets"
+      ]
+    },
+    "notBuy": {
+      "title": "Ce que nous excluons",
+      "items": [
+        "Le logiciel lui-même, la marque et les noms de domaine",
+        "Les messageries : Slack, Teams, e-mail",
+        "Les fichiers clients et les bases de données de production",
+        "Les espaces RH et juridiques",
+        "Les données personnelles des clients et des salariés",
+        "Le code écrit pour des clients ou sous licence tierce"
+      ]
+    },
+    "note": "La propriété et l'exploitation du logiciel, de la marque et des noms de domaine restent entièrement à l'entreprise, qui demeure libre de les céder. Nous n'acquérons aucun droit d'exécuter, de distribuer ou de commercialiser le logiciel, ni de construire un produit concurrent."
+  },
+  "process": {
+    "title": "Comment cela se passe",
+    "intro": "Le déroulement dépend de la situation de l'entreprise. Choisissez votre cas.",
+    "tabsLabel": "Parcours",
+    "tabs": [
+      {
+        "id": "entreprises",
+        "label": "Entreprises",
+        "steps": [
+          {
+            "title": "Premier échange",
+            "text": "Prise de contact et qualification rapide : outils utilisés, nature des contenus, contraintes particulières."
+          },
+          {
+            "title": "Inventaire sous NDA",
+            "text": "Revue des outils, du volume et de l'ancienneté des contenus, sous accord de confidentialité."
+          },
+          {
+            "title": "Proposition écrite",
+            "text": "Une proposition qui décrit le périmètre exact des contenus licenciés et la liste des exclusions."
+          },
+          {
+            "title": "Contrat de licence",
+            "text": "Signature d'une licence d'usage non exclusive, limitée à l'entraînement et à l'évaluation de modèles d'IA."
+          },
+          {
+            "title": "Export et anonymisation",
+            "text": "Export des contenus, anonymisation, puis suppression des exports bruts."
+          }
+        ],
+        "aside": {
+          "title": "Ce que vous obtenez",
+          "items": [
+            "Un revenu sur un actif qui existe déjà",
+            "Aucun transfert de propriété : vos contenus et votre logiciel restent les vôtres",
+            "Un périmètre et des exclusions fixés par écrit",
+            "L'export et l'anonymisation réalisés par nos soins"
+          ]
+        }
+      },
+      {
+        "id": "mandataires",
+        "label": "Mandataires judiciaires",
+        "steps": [
+          {
+            "title": "Identification du dossier",
+            "text": "Identification de l'entreprise concernée et qualification rapide avec l'étude."
+          },
+          {
+            "title": "Inventaire sous NDA",
+            "text": "Revue des outils, du volume et de l'ancienneté des contenus, sous accord de confidentialité."
+          },
+          {
+            "title": "Offre ferme",
+            "text": "Offre au format usuel : acompte de 10 % par chèque de banque, attestation bancaire de disponibilité des fonds, déclaration d'indépendance (art. L642-3 du Code de commerce), sans condition suspensive."
+          },
+          {
+            "title": "Autorisation et acte",
+            "text": "Autorisation par le juge-commissaire, puis signature de l'acte."
+          },
+          {
+            "title": "Export et anonymisation",
+            "text": "Export des contenus, anonymisation, puis suppression des exports bruts."
+          }
+        ],
+        "aside": {
+          "title": "Pour la procédure",
+          "items": [
+            "Un actif généralement sans valeur dans la procédure devient une recette",
+            "Les frais d'export, d'anonymisation et d'acte sont à notre charge",
+            "Un export conservatoire peut être réalisé avant la fermeture des comptes en ligne pour impayés",
+            "Le logiciel, la marque et les noms de domaine restent dans l'actif et peuvent être cédés librement"
+          ]
+        }
+      }
+    ]
+  },
+  "protection": {
+    "title": "Protection des données",
+    "intro": "La confidentialité est la condition de l'activité. Chaque export suit le même protocole.",
+    "items": [
+      {
+        "title": "Pseudonymisation des auteurs",
+        "text": "Les noms, identifiants et adresses des auteurs sont remplacés par des pseudonymes."
+      },
+      {
+        "title": "Suppression des secrets",
+        "text": "Clés, jetons et identifiants techniques sont détectés et retirés."
+      },
+      {
+        "title": "Retrait des données personnelles",
+        "text": "Les noms de clients et les données personnelles présentes dans les textes sont supprimés."
+      },
+      {
+        "title": "Suppression des exports bruts",
+        "text": "Les exports d'origine sont supprimés après livraison des données anonymisées."
+      },
+      {
+        "title": "Accès limité et documenté",
+        "text": "Seules les personnes nécessaires accèdent aux exports, et chaque accès est consigné."
+      }
+    ],
+    "pdf": "Télécharger le protocole de traitement des données (PDF)",
+    "lawyer": "Protocole validé par un avocat."
+  },
+  "aiDevelopers": {
+    "title": "Pour les développeurs d'IA",
+    "text": "Nous constituons des jeux de données issus de travail réel : documentation, tickets, revues de code et leurs liens. Ils sont conçus pour l'entraînement, l'évaluation et la construction d'environnements d'apprentissage par renforcement.",
+    "items": [
+      "Droits clarifiés : chaque jeu de données repose sur une licence d'usage écrite",
+      "Anonymisés selon un protocole documenté",
+      "Traçables : la provenance de chaque jeu de données est rattachée à sa licence"
+    ],
+    "cta": "Écrire à l'équipe"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Achetez-vous le logiciel ?",
+        "a": "Non. Nous acquérons uniquement une licence d'usage non exclusive sur la documentation. Le logiciel, la marque et les noms de domaine restent la propriété de l'entreprise, qui reste libre de les céder. Nous n'acquérons aucun droit d'exécuter, de distribuer ou de commercialiser le logiciel."
+      },
+      {
+        "q": "Collectez-vous les messageries ou les e-mails des salariés ?",
+        "a": "Non. Slack, Teams et les e-mails sont exclus du périmètre, de même que les espaces RH et juridiques, les fichiers clients et les bases de données de production."
+      },
+      {
+        "q": "Que deviennent les données personnelles ?",
+        "a": "Les auteurs sont pseudonymisés, les noms de clients et les données personnelles présentes dans les textes sont retirés, et les exports bruts sont supprimés après livraison."
+      },
+      {
+        "q": "À quoi servent les contenus ?",
+        "a": "Uniquement à entraîner et évaluer des modèles d'intelligence artificielle. Ils ne servent pas à construire un produit concurrent."
+      },
+      {
+        "q": "La licence est-elle exclusive ?",
+        "a": "Non. Elle est non exclusive : l'entreprise conserve ses contenus et peut continuer à les utiliser comme elle l'entend."
+      },
+      {
+        "q": "Les comptes en ligne vont être fermés. Est-il trop tard ?",
+        "a": "Pas nécessairement. En liquidation, nous pouvons réaliser un export conservatoire avant la fermeture des comptes pour impayés. Contactez-nous dès que possible."
+      }
+    ]
+  },
+  "about": {
+    "title": "Qui sommes-nous",
+    "lines": [
+      "{brand} est une activité d'Opus MP, SASU immatriculée sous le numéro SIREN 991 303 975, dont le siège est situé 35 rue Vital, 75016 Paris.",
+      "L'activité est dirigée par {founder}, diplômé de l'École polytechnique et d'HEC, ancien chef de projet au Boston Consulting Group et fondateur d'une agence de développement logiciel qui a compté jusqu'à 30 personnes."
+    ],
+    "linkedin": "Profil LinkedIn"
+  },
+  "contact": {
+    "title": "Nous contacter",
+    "text": "Mandataire, dirigeant ou développeur d'IA : décrivez-nous brièvement votre situation. Nous répondons personnellement.",
+    "email": "Écrire un e-mail",
+    "emailSubject": "Prise de contact — {brand}",
+    "phone": "Téléphone :",
+    "notice": "Les informations que vous nous adressez par e-mail servent uniquement à répondre à votre demande.",
+    "presentationPdf": "Présentation de la démarche (PDF)",
+    "noticeLink": "Voir notre politique de confidentialité"
+  },
+  "footer": {
+    "entity": "{brand} est une activité d'Opus MP, SASU — SIREN 991 303 975 — 35 rue Vital, 75016 Paris.",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "home": "Accueil"
+  },
+  "legalPage": {
+    "title": "Mentions légales",
+    "description": "Mentions légales du site {brand}.",
+    "sections": [
+      {
+        "title": "Éditeur du site",
+        "lines": [
+          "{companyName}, {legalForm} au capital de {shareCapital}",
+          "Siège social : {address}",
+          "SIREN : {siren} — {rcs}",
+          "Contact : {email}"
+        ]
+      },
+      {
+        "title": "Directeur de la publication",
+        "lines": [
+          "{publicationDirector}"
+        ]
+      },
+      {
+        "title": "Hébergement",
+        "lines": [
+          "{hostName}",
+          "{hostAddress}",
+          "{hostPhone}"
+        ]
+      },
+      {
+        "title": "Propriété intellectuelle",
+        "lines": [
+          "Les textes de ce site sont la propriété de {companyName}. Toute reproduction sans autorisation préalable est interdite."
+        ]
+      },
+      {
+        "title": "Données personnelles",
+        "lines": [
+          "Le traitement des données personnelles est décrit dans la politique de confidentialité."
+        ]
+      }
+    ]
+  },
+  "privacyPage": {
+    "title": "Politique de confidentialité",
+    "description": "Politique de confidentialité du site {brand}.",
+    "sections": [
+      {
+        "title": "Responsable du traitement",
+        "lines": [
+          "{companyName}, {legalForm}, SIREN {siren}, {address}. Contact : {email}."
+        ]
+      },
+      {
+        "title": "Données collectées",
+        "lines": [
+          "Ce site ne comporte aucun formulaire. Les seules données que nous recevons sont celles que vous choisissez de nous transmettre par e-mail ou par téléphone : nom, coordonnées et contenu de votre message.",
+          "Comme tout site web, l'hébergeur enregistre des journaux techniques (adresse IP, date, page demandée) nécessaires à la sécurité et au bon fonctionnement du service."
+        ]
+      },
+      {
+        "title": "Finalité et base légale",
+        "lines": [
+          "Ces données servent uniquement à répondre à votre demande et, le cas échéant, à préparer une relation contractuelle. La base légale est notre intérêt légitime à répondre aux personnes qui nous contactent, ou les mesures précontractuelles prises à votre demande."
+        ]
+      },
+      {
+        "title": "Durée de conservation",
+        "lines": [
+          "Les échanges sont conservés au plus trois ans après le dernier contact, sauf relation contractuelle, auquel cas les durées légales s'appliquent."
+        ]
+      },
+      {
+        "title": "Cookies et mesure d'audience",
+        "lines": [
+          "Ce site ne dépose aucun cookie et n'utilise aucun outil de mesure d'audience ni aucun traceur tiers. Les polices de caractères sont servies depuis notre propre site. Aucun bandeau de consentement n'est donc nécessaire."
+        ]
+      },
+      {
+        "title": "Destinataires",
+        "lines": [
+          "Vos données sont destinées à la seule équipe de {brand}. Elles ne sont ni vendues ni cédées."
+        ]
+      },
+      {
+        "title": "Vos droits",
+        "lines": [
+          "Conformément au RGPD et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Pour les exercer, écrivez à {email}.",
+          "Vous pouvez également introduire une réclamation auprès de la CNIL (www.cnil.fr)."
+        ]
+      },
+      {
+        "title": "Contenus licenciés",
+        "lines": [
+          "Le traitement des contenus documentaires licenciés par des entreprises relève d'un protocole distinct, décrit dans le bloc « Protection des données » de la page d'accueil."
+        ]
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "text": "Cette page n'existe pas ou a été déplacée.",
+    "back": "Retour à l'accueil"
+  }
+}

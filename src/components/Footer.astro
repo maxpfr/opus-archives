@@ -1,0 +1,21 @@
+---
+import { useTranslations, routes, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const { dict, t } = useTranslations(lang);
+const r = routes[lang];
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <p>{t(dict.footer.entity)}</p>
+    <ul>
+      <li><a href={r.legal}>{dict.footer.legal}</a></li>
+      <li><a href={r.privacy}>{dict.footer.privacy}</a></li>
+    </ul>
+  </div>
+</footer>

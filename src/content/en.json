@@ -1,0 +1,354 @@
+{
+  "meta": {
+    "lang": "en",
+    "locale": "en_GB",
+    "title": "{brand} — Giving value to your company's written work",
+    "description": "{brand} acquires non-exclusive licences of use on the internal documentation of digital companies and turns it into anonymized datasets for training and evaluating AI models. We do not buy the software."
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "mainNav": "Main navigation",
+    "langSwitch": "Language",
+    "external": "(opens in a new tab)"
+  },
+  "nav": {
+    "useCases": "Use cases",
+    "scope": "Scope",
+    "process": "Process",
+    "protection": "Data protection",
+    "faq": "Questions",
+    "contact": "Contact us"
+  },
+  "hero": {
+    "eyebrow": "Licence of use · Anonymization · Training data",
+    "title": "Giving value to your company's written work.",
+    "lead": "Wikis, tickets, specifications, code history: we acquire a non-exclusive licence of use on them, anonymize them, and they are used only to train and evaluate AI models. Securely and in full confidentiality.",
+    "pitch": "{brand} acquires licences of use on the internal documentation of digital companies. Once anonymized, this content is used only to train and evaluate artificial intelligence models. We do not buy the software.",
+    "cta": "Contact us",
+    "secondary": "See the process",
+    "facts": [
+      "Non-exclusive licence",
+      "No transfer of the software",
+      "Messaging and customer data excluded",
+      "Raw exports deleted after delivery"
+    ]
+  },
+  "useCases": {
+    "title": "Who it is for",
+    "intro": "A digital company produces rich documentation every day that is only ever used internally. It can be given value at several points in the life of the company.",
+    "items": [
+      {
+        "title": "Operating company",
+        "text": "Documentation built up over years can generate revenue without giving up anything of your business: the licence is non-exclusive and you keep ownership of your content and your software."
+      },
+      {
+        "title": "Voluntary wind-down",
+        "text": "In a dissolution or solvent liquidation, documentation becomes an asset with value, provided it is exported before online accounts are closed."
+      },
+      {
+        "title": "Divestment or product shutdown",
+        "text": "When a business line is sold or a product discontinued, its documentation can be valued separately, in line with any commitments made elsewhere."
+      },
+      {
+        "title": "Judicial liquidation",
+        "text": "With the liquidator and on authorization of the supervising judge: an asset usually worth nothing in the procedure becomes revenue for creditors."
+      }
+    ]
+  },
+  "scope": {
+    "title": "What we buy, and what we do not",
+    "intro": "We acquire a non-exclusive licence of use on clearly defined written content. The scope is set out in writing before anything is signed.",
+    "buy": {
+      "title": "What we license",
+      "items": [
+        "Wikis and Notion or Confluence spaces",
+        "Tickets: Jira, Linear, GitHub Issues",
+        "Specifications and design documents",
+        "Runbooks and postmortems",
+        "Code repository history, treated as data: commits, pull requests, reviews, links to tickets"
+      ]
+    },
+    "notBuy": {
+      "title": "What we exclude",
+      "items": [
+        "The software itself, the brand and the domain names",
+        "Messaging: Slack, Teams, email",
+        "Customer files and production databases",
+        "HR and legal spaces",
+        "Personal data of customers and employees",
+        "Code written for clients or under a third-party licence"
+      ]
+    },
+    "note": "Ownership and exploitation of the software, brand and domain names remain entirely with the company, which stays free to sell them. We acquire no right to run, distribute or commercialize the software, nor to build a competing product."
+  },
+  "process": {
+    "title": "How it works",
+    "intro": "The steps depend on the company's situation. Choose your case.",
+    "tabsLabel": "Process",
+    "tabs": [
+      {
+        "id": "companies",
+        "label": "Companies",
+        "steps": [
+          {
+            "title": "First conversation",
+            "text": "Initial contact and short qualification: tools used, type of content, specific constraints."
+          },
+          {
+            "title": "Inventory under NDA",
+            "text": "Review of tools, volume and age of the content, under a non-disclosure agreement."
+          },
+          {
+            "title": "Written proposal",
+            "text": "A proposal setting out the exact scope of the licensed content and the list of exclusions."
+          },
+          {
+            "title": "Licence agreement",
+            "text": "Signature of a non-exclusive licence of use, limited to training and evaluating AI models."
+          },
+          {
+            "title": "Export and anonymization",
+            "text": "Export of the content, anonymization, then deletion of the raw exports."
+          }
+        ],
+        "aside": {
+          "title": "What you get",
+          "items": [
+            "Revenue from an asset that already exists",
+            "No transfer of ownership: your content and your software remain yours",
+            "Scope and exclusions agreed in writing",
+            "Export and anonymization carried out by us"
+          ]
+        }
+      },
+      {
+        "id": "liquidators",
+        "label": "Insolvency practitioners",
+        "steps": [
+          {
+            "title": "Case identification",
+            "text": "Identification of the company concerned and short qualification with the practitioner's office."
+          },
+          {
+            "title": "Inventory under NDA",
+            "text": "Review of tools, volume and age of the content, under a non-disclosure agreement."
+          },
+          {
+            "title": "Firm offer",
+            "text": "Offer in the usual French format: 10% deposit by bank cheque, bank certificate of funds, declaration of independence (art. L642-3 of the French Commercial Code), no conditions precedent."
+          },
+          {
+            "title": "Authorization and deed",
+            "text": "Authorization by the supervising judge (juge-commissaire), then signature of the deed."
+          },
+          {
+            "title": "Export and anonymization",
+            "text": "Export of the content, anonymization, then deletion of the raw exports."
+          }
+        ],
+        "aside": {
+          "title": "For the procedure",
+          "items": [
+            "An asset usually worth nothing in the procedure becomes revenue",
+            "Export, anonymization and deed costs are borne by us",
+            "A protective export can be run before online accounts are closed for unpaid subscriptions",
+            "The software, brand and domain names stay in the estate and remain free to be sold"
+          ]
+        }
+      }
+    ]
+  },
+  "protection": {
+    "title": "Data protection",
+    "intro": "Confidentiality is a precondition of the business. Every export follows the same protocol.",
+    "items": [
+      {
+        "title": "Pseudonymized authors",
+        "text": "Authors' names, usernames and addresses are replaced with pseudonyms."
+      },
+      {
+        "title": "Secrets removed",
+        "text": "Keys, tokens and technical credentials are detected and removed."
+      },
+      {
+        "title": "Personal data removed",
+        "text": "Customer names and personal data found in the text are removed."
+      },
+      {
+        "title": "Raw exports deleted",
+        "text": "Original exports are deleted once the anonymized data has been delivered."
+      },
+      {
+        "title": "Limited, documented access",
+        "text": "Only the people who need it can access exports, and every access is logged."
+      }
+    ],
+    "pdf": "Download the data processing protocol (PDF)",
+    "lawyer": "Protocol validated by a lawyer."
+  },
+  "aiDevelopers": {
+    "title": "For AI developers",
+    "text": "We build datasets drawn from real work: documentation, tickets, code reviews and the links between them. They are designed for training, evaluation and building reinforcement-learning environments.",
+    "items": [
+      "Rights-cleared: every dataset rests on a written licence of use",
+      "Anonymized under a documented protocol",
+      "Traceable: the provenance of each dataset is tied to its licence"
+    ],
+    "cta": "Write to the team"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Do you buy the software?",
+        "a": "No. We only acquire a non-exclusive licence of use on the documentation. The software, brand and domain names remain the company's property, and it stays free to sell them. We acquire no right to run, distribute or commercialize the software."
+      },
+      {
+        "q": "Do you collect employees' messaging or emails?",
+        "a": "No. Slack, Teams and email are excluded from the scope, as are HR and legal spaces, customer files and production databases."
+      },
+      {
+        "q": "What happens to personal data?",
+        "a": "Authors are pseudonymized, customer names and personal data found in the text are removed, and raw exports are deleted after delivery."
+      },
+      {
+        "q": "What is the content used for?",
+        "a": "Only to train and evaluate artificial intelligence models. It is not used to build a competing product."
+      },
+      {
+        "q": "Is the licence exclusive?",
+        "a": "No. It is non-exclusive: the company keeps its content and can continue to use it as it wishes."
+      },
+      {
+        "q": "The online accounts are about to be closed. Is it too late?",
+        "a": "Not necessarily. In a liquidation, we can run a protective export before accounts are closed for unpaid subscriptions. Contact us as early as possible."
+      }
+    ]
+  },
+  "about": {
+    "title": "About us",
+    "lines": [
+      "{brand} is operated by Opus MP, a French SASU registered under SIREN 991 303 975, with its registered office at 35 rue Vital, 75016 Paris.",
+      "It is led by {founder}, a graduate of École polytechnique and HEC, former project leader at Boston Consulting Group and founder of a software development agency that grew to 30 people."
+    ],
+    "linkedin": "LinkedIn profile"
+  },
+  "contact": {
+    "title": "Contact us",
+    "text": "Insolvency practitioner, company director or AI developer: tell us briefly about your situation. We reply personally.",
+    "email": "Send an email",
+    "emailSubject": "Enquiry — {brand}",
+    "phone": "Phone:",
+    "notice": "Information you send us by email is used only to answer your request.",
+    "presentationPdf": "Overview of our approach (PDF)",
+    "noticeLink": "See our privacy policy"
+  },
+  "footer": {
+    "entity": "{brand} is operated by Opus MP, SASU — SIREN 991 303 975 — 35 rue Vital, 75016 Paris, France.",
+    "legal": "Legal notice",
+    "privacy": "Privacy policy",
+    "home": "Home"
+  },
+  "legalPage": {
+    "title": "Legal notice",
+    "description": "Legal notice for the {brand} website.",
+    "sections": [
+      {
+        "title": "Publisher",
+        "lines": [
+          "{companyName}, {legalForm} with a share capital of {shareCapital}",
+          "Registered office: {address}",
+          "SIREN: {siren} — {rcs}",
+          "Contact: {email}"
+        ]
+      },
+      {
+        "title": "Director of publication",
+        "lines": [
+          "{publicationDirector}"
+        ]
+      },
+      {
+        "title": "Hosting",
+        "lines": [
+          "{hostName}",
+          "{hostAddress}",
+          "{hostPhone}"
+        ]
+      },
+      {
+        "title": "Intellectual property",
+        "lines": [
+          "The texts on this site are the property of {companyName}. Any reproduction without prior authorization is prohibited."
+        ]
+      },
+      {
+        "title": "Personal data",
+        "lines": [
+          "The processing of personal data is described in the privacy policy."
+        ]
+      }
+    ]
+  },
+  "privacyPage": {
+    "title": "Privacy policy",
+    "description": "Privacy policy for the {brand} website.",
+    "sections": [
+      {
+        "title": "Data controller",
+        "lines": [
+          "{companyName}, {legalForm}, SIREN {siren}, {address}. Contact: {email}."
+        ]
+      },
+      {
+        "title": "Data collected",
+        "lines": [
+          "This site has no form. The only data we receive is what you choose to send us by email or phone: your name, contact details and the content of your message.",
+          "Like any website, the hosting provider records technical logs (IP address, date, requested page) needed for the security and operation of the service."
+        ]
+      },
+      {
+        "title": "Purpose and legal basis",
+        "lines": [
+          "This data is used only to answer your request and, where relevant, to prepare a contractual relationship. The legal basis is our legitimate interest in answering people who contact us, or pre-contractual steps taken at your request."
+        ]
+      },
+      {
+        "title": "Retention",
+        "lines": [
+          "Correspondence is kept for at most three years after the last contact, unless a contract is signed, in which case statutory periods apply."
+        ]
+      },
+      {
+        "title": "Cookies and analytics",
+        "lines": [
+          "This site sets no cookies and uses no analytics tool or third-party tracker. Fonts are served from our own site. No consent banner is therefore needed."
+        ]
+      },
+      {
+        "title": "Recipients",
+        "lines": [
+          "Your data is intended for the {brand} team only. It is neither sold nor transferred."
+        ]
+      },
+      {
+        "title": "Your rights",
+        "lines": [
+          "Under the GDPR and the French Data Protection Act, you have the right to access, rectify, erase, restrict, object to and port your data. To exercise these rights, write to {email}.",
+          "You may also lodge a complaint with the CNIL, the French data protection authority (www.cnil.fr)."
+        ]
+      },
+      {
+        "title": "Licensed content",
+        "lines": [
+          "The processing of documentation licensed by companies follows a separate protocol, described in the “Data protection” section of the home page."
+        ]
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "This page does not exist or has been moved.",
+    "back": "Back to home"
+  }
+}

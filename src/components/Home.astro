@@ -1,0 +1,295 @@
+---
+import { site, isPlaceholder } from '../../site.config';
+import { useTranslations, routes, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const { dict, t } = useTranslations(lang);
+
+const mailto = `mailto:${site.email}?subject=${encodeURIComponent(t(dict.contact.emailSubject))}`;
+const showPhone = site.phone !== '';
+const showLinkedin = !isPlaceholder(site.founder.linkedin);
+const { dataProtocolPdf, presentationPdf } = site.documents;
+const pad = (i: number) => String(i + 1).padStart(2, '0');
+---
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+    <span class="eyebrow">{dict.hero.eyebrow}</span>
+    <h1 id="hero-title">{t(dict.hero.title)}</h1>
+    <p class="lead">{t(dict.hero.lead)}</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#contact">{dict.hero.cta}</a>
+      <a class="btn btn-ghost" href="#processus">{dict.hero.secondary}</a>
+    </div>
+    <ul class="facts">
+      {dict.hero.facts.map((f) => <li>{t(f)}</li>)}
+    </ul>
+    <blockquote class="pitch"><p>{t(dict.hero.pitch)}</p></blockquote>
+  </div>
+</section>
+
+<section id="cas-usage" aria-labelledby="cas-usage-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="cas-usage-title">{t(dict.useCases.title)}</h2>
+      <p>{t(dict.useCases.intro)}</p>
+    </div>
+    <div class="grid grid-4">
+      {
+        dict.useCases.items.map((item, i) => (
+          <article class="card">
+            <span class="index" aria-hidden="true">{pad(i)}</span>
+            <h3>{t(item.title)}</h3>
+            <p>{t(item.text)}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<section id="perimetre" aria-labelledby="perimetre-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="perimetre-title">{t(dict.scope.title)}</h2>
+      <p>{t(dict.scope.intro)}</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="card scope-col scope-yes">
+        <h3>{t(dict.scope.buy.title)}</h3>
+        <ul>
+          {
+            dict.scope.buy.items.map((item) => (
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M4 10.5l4 4 8-9" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>{t(item)}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="card scope-col scope-no">
+        <h3>{t(dict.scope.notBuy.title)}</h3>
+        <ul>
+          {
+            dict.scope.notBuy.items.map((item) => (
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M5 10h10" stroke-linecap="round" />
+                </svg>
+                <span>{t(item)}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+    <p class="note">{t(dict.scope.note)}</p>
+  </div>
+</section>
+
+<section id="processus" aria-labelledby="processus-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="processus-title">{t(dict.process.title)}</h2>
+      <p>{t(dict.process.intro)}</p>
+    </div>
+    <div class="tabs" data-tabs>
+      <div class="tablist" role="tablist" aria-label={dict.process.tabsLabel}>
+        {
+          dict.process.tabs.map((tab, i) => (
+            <button
+              type="button"
+              role="tab"
+              id={`tab-${tab.id}`}
+              aria-controls={`panel-${tab.id}`}
+              aria-selected={i === 0 ? 'true' : 'false'}
+              tabindex={i === 0 ? 0 : -1}
+            >
+              {tab.label}
+            </button>
+          ))
+        }
+      </div>
+      {
+        dict.process.tabs.map((tab) => (
+          <div class="tabpanel" role="tabpanel" id={`panel-${tab.id}`} aria-labelledby={`tab-${tab.id}`}>
+            <h3 class="panel-title">{tab.label}</h3>
+            <div class="panel-body">
+              <ol class="steps">
+                {tab.steps.map((s) => (
+                  <li>
+                    <h4 class="h3-like">{t(s.title)}</h4>
+                    <p>{t(s.text)}</p>
+                  </li>
+                ))}
+              </ol>
+              <aside class="aside" aria-label={tab.aside.title}>
+                <h4 class="h3-like">{t(tab.aside.title)}</h4>
+                <ul>
+                  {tab.aside.items.map((item) => (
+                    <li>{t(item)}</li>
+                  ))}
+                </ul>
+              </aside>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<section id="protection" class="protection" aria-labelledby="protection-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="protection-title">{t(dict.protection.title)}</h2>
+      <p>{t(dict.protection.intro)}</p>
+    </div>
+    <div class="grid grid-3">
+      {
+        dict.protection.items.map((item) => (
+          <article class="card">
+            <h3>{t(item.title)}</h3>
+            <p>{t(item.text)}</p>
+          </article>
+        ))
+      }
+    </div>
+    {
+      (dataProtocolPdf || site.protocolValidatedByLawyer) && (
+        <div class="doc-links">
+          {/* TODO: dataProtocolPdf is empty until the "protocole de traitement des données" PDF is supplied. */}
+          {dataProtocolPdf && (
+            <a class="btn btn-ghost" href={dataProtocolPdf} download>
+              {dict.protection.pdf}
+            </a>
+          )}
+          {/* TODO: protocolValidatedByLawyer stays false until a lawyer has actually validated the protocol. */}
+          {site.protocolValidatedByLawyer && <p>{t(dict.protection.lawyer)}</p>}
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<section id="developpeurs-ia" aria-labelledby="ia-title">
+  <div class="container split">
+    <div>
+      <h2 id="ia-title">{t(dict.aiDevelopers.title)}</h2>
+      <p>{t(dict.aiDevelopers.text)}</p>
+    </div>
+    <div>
+      <ul class="checklist">
+        {
+          dict.aiDevelopers.items.map((item) => (
+            <li>
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M4 10.5l4 4 8-9" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>{t(item)}</span>
+            </li>
+          ))
+        }
+      </ul>
+      <a class="btn btn-ghost" href={mailto}>{dict.aiDevelopers.cta}</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="faq-title">{t(dict.faq.title)}</h2>
+    </div>
+    <div class="faq-list">
+      {
+        dict.faq.items.map((item) => (
+          <details>
+            <summary>{t(item.q)}</summary>
+            <p>{t(item.a)}</p>
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<section id="a-propos" class="about" aria-labelledby="about-title">
+  <div class="container">
+    <h2 id="about-title">{t(dict.about.title)}</h2>
+    {dict.about.lines.map((line) => <p>{t(line)}</p>)}
+    {
+      showLinkedin && (
+        <p>
+          <a href={site.founder.linkedin} rel="noopener" target="_blank">
+            {dict.about.linkedin} <span class="visually-hidden">{dict.a11y.external}</span>
+          </a>
+        </p>
+      )
+    }
+  </div>
+</section>
+
+<section id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact-box">
+      <h2 id="contact-title">{t(dict.contact.title)}</h2>
+      <p>{t(dict.contact.text)}</p>
+      <div class="contact-lines">
+        <a class="btn btn-light" href={mailto}>{dict.contact.email}</a>
+        <span>{site.email}</span>
+        {
+          showPhone && (
+            <span>
+              {t(dict.contact.phone)} <a href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a>
+            </span>
+          )
+        }
+        {/* TODO: presentationPdf is empty until the two-page "Présentation de la démarche" PDF is supplied. */}
+        {
+          presentationPdf && (
+            <a href={presentationPdf} download>
+              {dict.contact.presentationPdf}
+            </a>
+          )
+        }
+      </div>
+      <p class="small">
+        {t(dict.contact.notice)} <a href={routes[lang].privacy}>{dict.contact.noticeLink}</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Progressive enhancement: without JS both process panels are shown one after the other.
+  for (const root of document.querySelectorAll<HTMLElement>('[data-tabs]')) {
+    const tabs = [...root.querySelectorAll<HTMLButtonElement>('[role="tab"]')];
+    const select = (tab: HTMLButtonElement, focus = false) => {
+      for (const t of tabs) {
+        const on = t === tab;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute('aria-controls')!)!.hidden = !on;
+      }
+      if (focus) tab.focus();
+    };
+    tabs.forEach((tab, i) => {
+      tab.addEventListener('click', () => select(tab));
+      tab.addEventListener('keydown', (e) => {
+        const keys: Record<string, number> = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 };
+        if (!(e.key in keys)) return;
+        e.preventDefault();
+        select(tabs[(keys[e.key] + tabs.length) % tabs.length], true);
+      });
+    });
+    select(tabs[0]);
+  }
+</script>

@@ -1,0 +1,52 @@
+---
+import { site } from '../../site.config';
+import { useTranslations, routes, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  page: keyof (typeof routes)['fr'];
+  homeNav: boolean;
+}
+
+const { lang, page, homeNav } = Astro.props;
+const { dict } = useTranslations(lang);
+const home = routes[lang].home;
+const anchor = (id: string) => (homeNav ? `#${id}` : `${home}#${id}`);
+
+const links = [
+  { id: 'cas-usage', label: dict.nav.useCases },
+  { id: 'perimetre', label: dict.nav.scope },
+  { id: 'processus', label: dict.nav.process },
+  { id: 'protection', label: dict.nav.protection },
+  { id: 'faq', label: dict.nav.faq },
+];
+---
+
+<header class="site-header">
+  <div class="container">
+    <a class="wordmark" href={home}>{site.brand}</a>
+    <nav class="main-nav" aria-label={dict.a11y.mainNav}>
+      <ul>
+        {links.map((l) => <li><a href={anchor(l.id)}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+    <div class="header-actions">
+      {
+        site.englishEnabled && (
+          <div class="lang-switch" role="group" aria-label={dict.a11y.langSwitch}>
+            {(['fr', 'en'] as const).map((l) =>
+              l === lang ? (
+                <span aria-current="true" lang={l}>{l.toUpperCase()}</span>
+              ) : (
+                <a href={routes[l][page]} hreflang={l} lang={l}>
+                  {l.toUpperCase()}
+                </a>
+              ),
+            )}
+          </div>
+        )
+      }
+      <a class="btn btn-primary" href={anchor('contact')}>{dict.nav.contact}</a>
+    </div>
+  </div>
+</header>

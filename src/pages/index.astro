@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import Home from '../components/Home.astro';
+import { useTranslations } from '../i18n';
+
+const { dict, t } = useTranslations('fr');
+---
+
+<Base lang="fr" page="home" homeNav title={t(dict.meta.title)} description={t(dict.meta.description)}>
+  <Home lang="fr" />
+</Base>
