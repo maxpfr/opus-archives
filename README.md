@@ -40,7 +40,7 @@ Tous sont centralisés dans `site.config.ts` :
 - `{{LINKEDIN_URL}}` — profil LinkedIn du fondateur (le lien est masqué tant qu'il n'est pas rempli)
 - `{{CAPITAL_SOCIAL}}`, `{{RCS}}` — mentions obligatoires de l'éditeur
 - `{{DIRECTEUR_DE_PUBLICATION}}`
-- `{{HEBERGEUR_NOM}}`, `{{HEBERGEUR_ADRESSE}}`, `{{HEBERGEUR_TELEPHONE}}`
+- `{{HEBERGEUR_ADRESSE}}`, `{{HEBERGEUR_TELEPHONE}}` (hébergeur : Netlify, Inc.)
 - `documents.dataProtocolPdf` — « protocole de traitement des données » (lien masqué tant que vide)
 - `documents.presentationPdf` — « Présentation de la démarche » (lien masqué tant que vide)
 - `protocolValidatedByLawyer` — **laisser à `false`** tant qu'un avocat n'a pas réellement validé le protocole
@@ -69,9 +69,13 @@ public/                 favicon, _headers, docs/
 
 ## Déploiement
 
+**Production : Netlify**, relié au dépôt GitHub. Chaque push sur `main` est déployé automatiquement (config dans `netlify.toml`).
+
+Autres hébergeurs possibles :
+
 Site 100 % statique : commande `npm run build`, dossier publié `dist/`. Aucune variable d'environnement n'est nécessaire (`.env.example` est vide à dessein).
 
-- **Netlify** : New site → importer le dépôt → Build command `npm run build`, Publish directory `dist`. Les en-têtes de `public/_headers` sont appliqués automatiquement. Domaine : Domain management → Add custom domain.
+- **Netlify** (déjà en place) : New site → importer le dépôt → Build command `npm run build`, Publish directory `dist`. Les en-têtes de `public/_headers` sont appliqués automatiquement. Domaine : Domain management → Add custom domain.
 - **Cloudflare Pages** : Workers & Pages → Create → Pages → connecter le dépôt → preset *Astro* (build `npm run build`, output `dist`). `_headers` est pris en charge. Domaine : Custom domains.
 - **Vercel** : Add New → Project → importer le dépôt, preset *Astro* détecté automatiquement. `_headers` n'est pas lu par Vercel : recopier les en-têtes dans un `vercel.json` (`"headers": [{ "source": "/(.*)", "headers": [...] }]`) si souhaité. Domaine : Settings → Domains.
 

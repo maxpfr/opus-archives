@@ -44,9 +44,10 @@ export const site = {
     rcs: '{{RCS}}',
     // TODO: director of publication not confirmed.
     publicationDirector: '{{DIRECTEUR_DE_PUBLICATION}}',
-    // TODO: hosting provider not chosen (name, address, phone).
+    // Hosting: Netlify (confirmed). TODO: address and phone, to copy from Netlify's own legal pages
+    // (third-party legal notices disagree on the current address).
     host: {
-      name: '{{HEBERGEUR_NOM}}',
+      name: 'Netlify, Inc.',
       address: '{{HEBERGEUR_ADRESSE}}',
       phone: '{{HEBERGEUR_TELEPHONE}}',
     },
