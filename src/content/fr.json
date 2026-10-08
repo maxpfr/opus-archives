@@ -2,8 +2,8 @@
   "meta": {
     "lang": "fr",
     "locale": "fr_FR",
-    "title": "{brand} — Valoriser la production écrite de votre entreprise",
-    "description": "{brand} acquiert des licences d'usage non exclusives sur la documentation interne d'entreprises du numérique et la transforme en jeux de données anonymisés pour l'entraînement et l'évaluation de modèles d'IA. Nous n'achetons pas le logiciel."
+    "title": "{brand} — Valoriser la documentation technique de votre entreprise",
+    "description": "{brand} rémunère les entreprises du numérique pour utiliser leur documentation technique, leurs tickets et leur code dans l'entraînement et l'évaluation de modèles d'IA. Licence non exclusive, nom de l'entreprise retiré, rémunération fixe."
   },
   "a11y": {
     "skip": "Aller au contenu",
@@ -12,67 +12,65 @@
     "external": "(nouvel onglet)"
   },
   "nav": {
-    "useCases": "Cas d'usage",
+    "useCases": "Valeur",
     "scope": "Périmètre",
     "process": "Processus",
-    "protection": "Protection des données",
+    "protection": "Confidentialité",
     "faq": "Questions",
-    "contact": "Nous contacter"
+    "contact": "Faire évaluer"
   },
   "hero": {
-    "eyebrow": "Licence d'usage · Anonymisation · Données d'entraînement",
-    "title": "Valoriser la production écrite| de votre entreprise.",
-    "lead": "Wikis, tickets, spécifications, historique de code : nous en acquérons une licence d'usage non exclusive, nous les anonymisons, et ils servent uniquement à entraîner et évaluer des modèles d'IA. En toute sécurité et en toute confidentialité.",
-    "pitch": "{brand} acquiert des licences d'usage sur la documentation interne d'entreprises du numérique.| Une fois anonymisés, ces contenus servent uniquement à entraîner et évaluer des modèles d'intelligence artificielle. Nous n'achetons pas le logiciel.",
+    "eyebrow": "Documentation technique · Licence d'usage · Données d'entraînement",
+    "title": "Vos équipes ont produit des années de documentation.| Elle peut encore générer un revenu.",
+    "lead": "{brand} rémunère les entreprises du numérique pour utiliser certains de leurs contenus internes (documentation technique, tickets, code et revues de code) dans l'entraînement et l'évaluation de modèles d'IA.",
+    "sub": "Vous conservez la propriété de vos contenus et de votre logiciel. Le périmètre, les usages autorisés et la rémunération sont fixés par contrat.",
+    "ctaPrimary": "Faire évaluer nos archives",
+    "ctaLiquidators": "Mandataires judiciaires",
     "facts": [
-      "Licence non exclusive",
-      "Pas de reprise du logiciel",
-      "Messageries et données clients exclues",
-      "Exports bruts supprimés après livraison"
-    ],
-    "ctaCompanies": "Pour les entreprises",
-    "ctaLiquidators": "Pour les mandataires",
-    "pitchCta": "Notre périmètre"
+      "Rémunération fixe, versée à la signature",
+      "Licence non exclusive : vous gardez vos contenus",
+      "Nom de l'entreprise retiré des données",
+      "Messageries et données clients exclues"
+    ]
   },
   "useCases": {
-    "title": "Pour qui| : quatre situations, une même démarche",
-    "intro": "Une entreprise du numérique produit chaque jour une documentation riche qui ne sert qu'en interne. Elle peut être valorisée à plusieurs moments de la vie de l'entreprise.",
+    "label": "Pour qui",
+    "title": "Quatre situations,| une même démarche",
+    "intro": "La documentation peut être valorisée à plusieurs moments de la vie d'une entreprise du numérique.",
     "items": [
       {
         "title": "Entreprise en activité",
-        "text": "Votre documentation accumulée depuis des années peut générer un revenu sans rien céder de votre activité : la licence est non exclusive et vous restez propriétaire de vos contenus comme de votre logiciel."
+        "text": "Un revenu complémentaire, sans rien céder de votre activité ni de vos contenus."
       },
       {
         "title": "Fermeture volontaire",
-        "text": "Lors d'une dissolution ou d'une liquidation amiable, la documentation devient un actif valorisable, à condition d'être exportée avant la fermeture des comptes en ligne."
+        "text": "Dissolution ou liquidation amiable : à prévoir avant la fermeture des comptes en ligne."
       },
       {
         "title": "Cession ou arrêt d'un produit",
-        "text": "Quand une activité est cédée ou un produit abandonné, la documentation qui le concerne peut être valorisée séparément, dans le respect des engagements pris par ailleurs."
+        "text": "La documentation d'un produit abandonné peut être valorisée séparément."
       },
       {
         "title": "Liquidation judiciaire",
-        "text": "Avec le liquidateur et sur autorisation du juge-commissaire : un actif qui ne vaut généralement rien dans la procédure devient une recette pour les créanciers."
+        "text": "Avec le liquidateur et sur autorisation du juge-commissaire."
       }
     ]
   },
   "scope": {
-    "title": "Ce que nous achetons,| ce que nous n'achetons pas",
-    "intro": "Nous acquérons une licence d'usage non exclusive sur des contenus écrits précis. Le périmètre est fixé par écrit avant toute signature.",
+    "title": "Ce que couvre la licence,| ce qu'elle exclut",
+    "intro": "Le périmètre exact est fixé par écrit avant toute signature. Selon ce qui est convenu, il peut comprendre :",
     "buy": {
-      "title": "Ce que nous licencions",
+      "title": "Inclus selon le périmètre",
       "items": [
         "Wikis et espaces Notion ou Confluence",
         "Tickets : Jira, Linear, GitHub Issues",
-        "Spécifications et documents de conception",
-        "Runbooks et postmortems",
-        "Historique des dépôts de code, traité comme une donnée : commits, pull requests, revues, liens vers les tickets"
+        "Spécifications, runbooks et postmortems",
+        "Code source des dépôts, avec son historique : commits, pull requests et revues"
       ]
     },
     "notBuy": {
-      "title": "Ce que nous excluons",
+      "title": "Toujours exclu",
       "items": [
-        "Le logiciel lui-même, la marque et les noms de domaine",
         "Les messageries : Slack, Teams, e-mail",
         "Les fichiers clients et les bases de données de production",
         "Les espaces RH et juridiques",
@@ -80,7 +78,7 @@
         "Le code écrit pour des clients ou sous licence tierce"
       ]
     },
-    "note": "La propriété et l'exploitation du logiciel, de la marque et des noms de domaine restent entièrement à l'entreprise, qui demeure libre de les céder. Nous n'acquérons aucun droit d'exécuter, de distribuer ou de commercialiser le logiciel, ni de construire un produit concurrent."
+    "note": "Le code source peut donc faire partie du périmètre. La licence n'en transfère pas la propriété : elle autorise seulement son usage pour entraîner et évaluer des modèles d'IA. Elle ne donne aucun droit d'exécuter, de distribuer ou de commercialiser votre logiciel. Votre marque et vos noms de domaine ne sont pas concernés, et vous restez libre de céder le logiciel."
   },
   "process": {
     "title": "Comment cela se passe",
@@ -93,156 +91,168 @@
         "steps": [
           {
             "title": "Premier échange",
-            "text": "Prise de contact et qualification rapide : outils utilisés, nature des contenus, contraintes particulières."
+            "text": "Vous nous décrivez votre activité, les outils utilisés et la période couverte par vos archives."
           },
           {
             "title": "Inventaire sous NDA",
             "text": "Revue des outils, du volume et de l'ancienneté des contenus, sous accord de confidentialité."
           },
           {
-            "title": "Proposition écrite",
-            "text": "Une proposition qui décrit le périmètre exact des contenus licenciés et la liste des exclusions."
+            "title": "Évaluation et proposition",
+            "text": "Une proposition écrite précisant le périmètre, les exclusions et le montant, ou l'indication qu'une licence n'est pas pertinente."
           },
           {
-            "title": "Contrat de licence",
-            "text": "Signature d'une licence d'usage non exclusive, limitée à l'entraînement et à l'évaluation de modèles d'IA."
+            "title": "Contrat et paiement",
+            "text": "Signature de la licence d'usage non exclusive ; le montant fixe est versé à la signature."
           },
           {
-            "title": "Export et anonymisation",
-            "text": "Export des contenus, anonymisation, puis suppression des exports bruts."
+            "title": "Export et préparation",
+            "text": "Export des contenus, retrait des éléments identifiants, puis suppression des exports bruts."
           }
         ],
         "aside": {
           "title": "Ce que vous obtenez",
           "items": [
-            "Un revenu sur un actif qui existe déjà",
-            "Aucun transfert de propriété : vos contenus et votre logiciel restent les vôtres",
+            "Un revenu sur des contenus que vous possédez déjà",
+            "La propriété de vos contenus et de votre logiciel, intacte",
             "Un périmètre et des exclusions fixés par écrit",
-            "L'export et l'anonymisation réalisés par nos soins"
+            "L'export et la préparation réalisés par nos soins"
           ]
         }
       },
       {
         "id": "mandataires",
         "label": "Mandataires judiciaires",
+        "lead": "Avant de fermer les comptes Notion, Jira ou GitHub, vérifiez si leur contenu peut être valorisé.",
         "steps": [
           {
-            "title": "Identification du dossier",
-            "text": "Identification de l'entreprise concernée et qualification rapide avec l'étude."
+            "title": "Signalement du dossier",
+            "text": "Vous nous indiquez l'entreprise et les outils en ligne encore actifs ; nous qualifions rapidement l'intérêt du fonds."
+          },
+          {
+            "title": "Export conservatoire si nécessaire",
+            "text": "Si des abonnements impayés menacent les comptes, nous pouvons réaliser un export conservatoire avant leur fermeture."
           },
           {
             "title": "Inventaire sous NDA",
-            "text": "Revue des outils, du volume et de l'ancienneté des contenus, sous accord de confidentialité."
+            "text": "Revue des outils, du volume et de l'ancienneté des contenus."
           },
           {
             "title": "Offre ferme",
-            "text": "Offre au format usuel : acompte de 10 % par chèque de banque, attestation bancaire de disponibilité des fonds, déclaration d'indépendance (art. L642-3 du Code de commerce), sans condition suspensive."
+            "text": "Offre au format usuel des cessions, sans condition suspensive.",
+            "detail": "Acompte de 10 % par chèque de banque, attestation bancaire de disponibilité des fonds, déclaration d'indépendance (art. L642-3 du Code de commerce)."
           },
           {
-            "title": "Autorisation et acte",
-            "text": "Autorisation par le juge-commissaire, puis signature de l'acte."
-          },
-          {
-            "title": "Export et anonymisation",
-            "text": "Export des contenus, anonymisation, puis suppression des exports bruts."
+            "title": "Autorisation, acte et préparation",
+            "text": "Autorisation du juge-commissaire, signature de l'acte, puis export, préparation et suppression des exports bruts."
           }
         ],
+        "detailLabel": "Détail de l'offre",
         "aside": {
           "title": "Pour la procédure",
           "items": [
-            "Un actif généralement sans valeur dans la procédure devient une recette",
-            "Les frais d'export, d'anonymisation et d'acte sont à notre charge",
-            "Un export conservatoire peut être réalisé avant la fermeture des comptes en ligne pour impayés",
-            "Le logiciel, la marque et les noms de domaine restent dans l'actif et peuvent être cédés librement"
+            "Une source de produit supplémentaire, distincte du logiciel, de la marque et des noms de domaine",
+            "Ces actifs restent dans la procédure et peuvent être cédés librement",
+            "Les opérations d'export et de préparation prévues dans notre offre sont à notre charge, ainsi que les frais d'acte"
           ]
         }
       }
     ]
   },
   "protection": {
-    "title": "Protection des données",
-    "intro": "La confidentialité est la condition de l'activité. Chaque export suit le même protocole.",
+    "label": "Confidentialité",
+    "title": "Qui verra quoi| de votre entreprise ?",
+    "intro": "Les contenus préparés sont transmis, sous licence, à des équipes qui entraînent et évaluent des modèles d'IA. Voici ce qu'elles reçoivent, et ce qu'elles ne reçoivent pas.",
     "items": [
       {
-        "title": "Pseudonymisation des auteurs",
-        "text": "Les noms, identifiants et adresses des auteurs sont remplacés par des pseudonymes."
+        "title": "Le nom de votre entreprise est retiré",
+        "text": "Votre raison sociale et vos marques sont supprimées des contenus : les destinataires ne savent pas de quelle entreprise ils proviennent."
       },
       {
-        "title": "Suppression des secrets",
-        "text": "Clés, jetons et identifiants techniques sont détectés et retirés."
+        "title": "Les auteurs sont pseudonymisés",
+        "text": "Noms, identifiants et adresses des collaborateurs sont remplacés par des pseudonymes cohérents, pour conserver qui a répondu à qui sans révéler qui ils sont."
       },
       {
-        "title": "Retrait des données personnelles",
+        "title": "Clients et données personnelles retirés",
         "text": "Les noms de clients et les données personnelles présentes dans les textes sont supprimés."
       },
       {
-        "title": "Suppression des exports bruts",
-        "text": "Les exports d'origine sont supprimés après livraison des données anonymisées."
+        "title": "Secrets techniques supprimés",
+        "text": "Clés, jetons et identifiants techniques sont détectés et retirés."
       },
       {
-        "title": "Accès limité et documenté",
-        "text": "Seules les personnes nécessaires accèdent aux exports, et chaque accès est consigné."
+        "title": "Ce qui ne peut être nettoyé est écarté",
+        "text": "Un contenu qui ne peut pas être suffisamment débarrassé de ses éléments identifiants n'est pas transmis."
+      },
+      {
+        "title": "Exports bruts supprimés, accès limité",
+        "text": "Les exports d'origine sont supprimés après livraison. Seules les personnes nécessaires y accèdent, et chaque accès est consigné."
       }
     ],
+    "restriction": "Les destinataires reçoivent une licence limitée à l'entraînement et à l'évaluation de modèles. Ils n'obtiennent aucun droit d'exécuter, de distribuer ou de commercialiser votre logiciel.",
     "pdf": "Télécharger le protocole de traitement des données (PDF)",
     "lawyer": "Protocole validé par un avocat."
   },
   "aiDevelopers": {
-    "title": "Pour les développeurs d'IA",
-    "text": "Nous constituons des jeux de données issus de travail réel : documentation, tickets, revues de code et leurs liens. Ils sont conçus pour l'entraînement, l'évaluation et la construction d'environnements d'apprentissage par renforcement.",
+    "label": "Acheteurs",
+    "title": "Pour les équipes qui entraînent| et évaluent des modèles d'IA",
+    "text": "Des historiques de développement réels, dont les droits sont clarifiés par une licence écrite.",
     "items": [
-      "Droits clarifiés : chaque jeu de données repose sur une licence d'usage écrite",
-      "Anonymisés selon un protocole documenté",
-      "Traçables : la provenance de chaque jeu de données est rattachée à sa licence"
+      "Séquences reliées : ticket, spécification, modification de code et revue, dans leur ordre réel",
+      "Environnements exécutables lorsque l'historique le permet : l'agent part de l'état du dépôt avant une modification, reçoit la demande d'origine, et sa proposition est vérifiée par les tests du projet",
+      "Provenance traçable : chaque jeu de données est rattaché à sa licence, avec le périmètre et les exclusions convenus",
+      "Contenus préparés selon le même protocole : entreprise non identifiée, auteurs pseudonymisés, secrets et données personnelles retirés"
     ],
-    "cta": "Écrire à l'équipe"
+    "cta": "Demander une présentation"
   },
   "faq": {
     "title": "Questions fréquentes",
     "items": [
       {
-        "q": "Achetez-vous le logiciel ?",
-        "a": "Non. Nous acquérons uniquement une licence d'usage non exclusive sur la documentation. Le logiciel, la marque et les noms de domaine restent la propriété de l'entreprise, qui reste libre de les céder. Nous n'acquérons aucun droit d'exécuter, de distribuer ou de commercialiser le logiciel."
+        "q": "Récupérez-vous notre code source ?",
+        "a": "Il peut faire partie du périmètre, si vous en convenez. La licence ne vous en retire pas la propriété et n'autorise que son usage pour entraîner et évaluer des modèles d'IA, sans droit d'exécuter, de distribuer ou de commercialiser le logiciel."
       },
       {
-        "q": "Collectez-vous les messageries ou les e-mails des salariés ?",
-        "a": "Non. Slack, Teams et les e-mails sont exclus du périmètre, de même que les espaces RH et juridiques, les fichiers clients et les bases de données de production."
+        "q": "Quels droits devons-nous détenir ?",
+        "a": "Vous devez être titulaire des droits sur les contenus licenciés. C'est pourquoi le code écrit pour des clients ou sous licence tierce est exclu. Ce point est vérifié pendant l'inventaire."
       },
       {
-        "q": "Que deviennent les données personnelles ?",
-        "a": "Les auteurs sont pseudonymisés, les noms de clients et les données personnelles présentes dans les textes sont retirés, et les exports bruts sont supprimés après livraison."
+        "q": "Comment la rémunération est-elle calculée ?",
+        "a": "Elle dépend du volume exploitable, de la richesse technique, de la continuité de l'historique et des droits disponibles. C'est un montant fixe, inscrit au contrat et versé à la signature."
       },
       {
-        "q": "À quoi servent les contenus ?",
-        "a": "Uniquement à entraîner et évaluer des modèles d'intelligence artificielle. Ils ne servent pas à construire un produit concurrent."
+        "q": "Qui reçoit les contenus ?",
+        "a": "Des équipes qui entraînent et évaluent des modèles d'IA, sous licence. Elles reçoivent des contenus dont le nom de votre entreprise, les identités des auteurs, les données personnelles et les secrets techniques ont été retirés."
+      },
+      {
+        "q": "Collectez-vous les messageries des salariés ?",
+        "a": "Non. Slack, Teams et les e-mails sont toujours exclus, comme les espaces RH et juridiques, les fichiers clients et les bases de production."
       },
       {
         "q": "La licence est-elle exclusive ?",
-        "a": "Non. Elle est non exclusive : l'entreprise conserve ses contenus et peut continuer à les utiliser comme elle l'entend."
-      },
-      {
-        "q": "Les comptes en ligne vont être fermés. Est-il trop tard ?",
-        "a": "Pas nécessairement. En liquidation, nous pouvons réaliser un export conservatoire avant la fermeture des comptes pour impayés. Contactez-nous dès que possible."
+        "a": "Non. Vous conservez vos contenus et pouvez continuer à les utiliser comme vous l'entendez."
       }
     ]
   },
   "about": {
     "title": "Qui sommes-nous",
     "lines": [
-      "{brand} est une activité d'Opus MP, SASU immatriculée sous le numéro SIREN 991 303 975, dont le siège est situé 35 rue Vital, 75016 Paris.",
-      "L'activité est dirigée par {founder}, diplômé de l'École polytechnique et d'HEC, ancien chef de projet au Boston Consulting Group et fondateur d'une agence de développement logiciel qui a compté jusqu'à 30 personnes."
+      "{brand} est dirigé par {founder}, ancien chef de projet au Boston Consulting Group et fondateur d'une entreprise de développement logiciel. Cette expérience lui a donné une connaissance directe des contenus que produisent les équipes techniques : spécifications, tickets, documentation et revues de code.",
+      "Diplômé de l'École polytechnique et d'HEC.",
+      "{brand} est une activité d'Opus MP, SASU immatriculée sous le numéro SIREN 991 303 975, 35 rue Vital, 75016 Paris."
     ],
     "linkedin": "Profil LinkedIn"
   },
   "contact": {
-    "title": "Parlons de votre situation.",
-    "text": "Mandataire, dirigeant ou développeur d'IA : décrivez-nous brièvement votre situation. Nous répondons personnellement.",
-    "email": "Écrire un e-mail",
-    "emailSubject": "Prise de contact — {brand}",
+    "title": "Votre documentation peut-elle| intéresser {brand} ?",
+    "text": "Indiquez-nous votre activité, les outils utilisés et la période couverte par vos archives. Ces premières informations nous permettent de vous dire si une évaluation est pertinente.",
+    "email": "Faire évaluer nos archives",
+    "emailSubject": "Évaluation de nos archives — {brand}",
+    "emailBody": "Activité de l'entreprise :\nOutils utilisés (Notion, Confluence, Jira, GitHub…) :\nPériode couverte par les archives :\nSituation (en activité, fermeture, cession, procédure collective) :\n",
     "phone": "Téléphone :",
     "notice": "Les informations que vous nous adressez par e-mail servent uniquement à répondre à votre demande.",
-    "presentationPdf": "Présentation de la démarche (PDF)",
-    "noticeLink": "Voir notre politique de confidentialité"
+    "noticeLink": "Voir notre politique de confidentialité",
+    "presentationPdf": "Présentation de la démarche (PDF)"
   },
   "footer": {
     "entity": "{brand} est une activité d'Opus MP, SASU — SIREN 991 303 975 — 35 rue Vital, 75016 Paris.",
@@ -353,15 +363,62 @@
     "back": "Retour à l'accueil"
   },
   "labels": {
-    "useCases": "Cas d'usage",
+    "useCases": "Pour qui",
     "buy": "Inclus",
     "notBuy": "Exclus",
     "process": "Processus",
     "protection": "Confidentialité",
-    "ai": "Développeurs d'IA",
+    "ai": "Acheteurs",
     "faq": "Questions",
     "about": "À propos",
     "contact": "Contact",
     "step": "Étape"
+  },
+  "value": {
+    "label": "Pourquoi ces contenus ont de la valeur",
+    "title": "Ce qui a de la valeur,| c'est le chemin entre un problème et sa résolution.",
+    "intro": "Pris isolément, un document interne vaut peu. Reliés entre eux, vos outils racontent comment une équipe a réellement travaillé sur des situations concrètes.",
+    "chain": [
+      {
+        "title": "Le ticket",
+        "text": "décrit un problème ou une demande, avec son contexte."
+      },
+      {
+        "title": "La spécification",
+        "text": "précise la solution envisagée et ses contraintes."
+      },
+      {
+        "title": "Le code",
+        "text": "montre la modification réellement apportée."
+      },
+      {
+        "title": "La revue",
+        "text": "expose les corrections, les arbitrages et la validation."
+      }
+    ],
+    "usage": "Ces séquences servent à entraîner et tester des modèles d'IA sur des tâches de développement logiciel : comprendre une demande, retrouver le contexte utile, proposer une modification et vérifier le résultat. C'est pourquoi les liens entre tickets, documents et code comptent autant que les contenus eux-mêmes."
+  },
+  "economics": {
+    "label": "Rémunération",
+    "title": "Comment nous évaluons| vos contenus",
+    "intro": "Nous ne fixons pas de prix catalogue : chaque fonds documentaire est évalué au cas par cas.",
+    "items": [
+      {
+        "q": "Ce qui nous intéresse",
+        "a": "Des projets logiciels réels, un historique de plusieurs années, et surtout des liens entre outils : tickets reliés aux spécifications, au code et aux revues."
+      },
+      {
+        "q": "Ce qui détermine la valeur",
+        "a": "Le volume exploitable, la richesse technique des échanges, la continuité de l'historique et les droits dont vous disposez sur les contenus."
+      },
+      {
+        "q": "Comment vous êtes payé",
+        "a": "Un montant fixe, inscrit au contrat de licence et versé à la signature."
+      },
+      {
+        "q": "Si le fonds ne convient pas",
+        "a": "Nous ne faisons pas d'offre sur tous les dossiers. L'analyse peut conclure qu'une licence n'est pas pertinente ; nous vous le disons simplement."
+      }
+    ]
   }
 }

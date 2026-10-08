@@ -12,13 +12,14 @@ const { lang } = Astro.props;
 const { dict, t } = useTranslations(lang);
 const L = dict.labels;
 
-const mailto = `mailto:${site.email}?subject=${encodeURIComponent(t(dict.contact.emailSubject))}`;
+const mailto = `mailto:${site.email}?subject=${encodeURIComponent(t(dict.contact.emailSubject))}&body=${encodeURIComponent(dict.contact.emailBody)}`;
+const mailtoPlain = `mailto:${site.email}?subject=${encodeURIComponent(t(dict.contact.emailSubject))}`;
 const showPhone = site.phone !== '';
 const showLinkedin = !isPlaceholder(site.founder.linkedin);
 const dataProtocolPdf = site.documents.dataProtocolPdf && withBase(site.documents.dataProtocolPdf);
 const presentationPdf = site.documents.presentationPdf && withBase(site.documents.presentationPdf);
 const pad = (i: number) => String(i + 1).padStart(2, '0');
-const [companiesTab, liquidatorsTab] = dict.process.tabs;
+const liquidatorsTab = dict.process.tabs[1];
 ---
 
 <section class="hero" aria-labelledby="hero-title">
@@ -27,8 +28,10 @@ const [companiesTab, liquidatorsTab] = dict.process.tabs;
       <div>
         <span class="label">{dict.hero.eyebrow}</span>
         <h1 id="hero-title"><span class="sq" aria-hidden="true"></span><TwoTone text={t(dict.hero.title)} /></h1>
+        <p class="hero-lead">{t(dict.hero.lead)}</p>
+        <p class="hero-sub">{t(dict.hero.sub)}</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href={`#panel-${companiesTab.id}`} data-tab-link>{dict.hero.ctaCompanies}</a>
+          <a class="btn btn-primary" href="#contact">{dict.hero.ctaPrimary}</a>
           <a class="btn btn-outline" href={`#panel-${liquidatorsTab.id}`} data-tab-link>{dict.hero.ctaLiquidators}</a>
         </div>
       </div>
@@ -40,29 +43,17 @@ const [companiesTab, liquidatorsTab] = dict.process.tabs;
   </div>
 </section>
 
-<section class="statement" aria-label={site.brand}>
-  <div class="container">
-    <div class="inner statement-grid">
-      <p class="lead-copy">{t(dict.hero.lead)}</p>
-      <div>
-        <p class="big"><TwoTone text={t(dict.hero.pitch)} /></p>
-        <a class="btn btn-outline" href="#perimetre">{dict.hero.pitchCta}</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="cas-usage" aria-labelledby="cas-usage-title">
+<section id="valeur" aria-labelledby="valeur-title">
   <div class="container">
     <div class="inner">
       <div class="section-head">
-        <span class="label">{L.useCases}</span>
-        <h2 id="cas-usage-title"><span class="sq" aria-hidden="true"></span><TwoTone text={t(dict.useCases.title)} /></h2>
-        <p>{t(dict.useCases.intro)}</p>
+        <span class="label">{dict.value.label}</span>
+        <h2 id="valeur-title"><span class="sq" aria-hidden="true"></span><TwoTone text={t(dict.value.title)} /></h2>
+        <p>{t(dict.value.intro)}</p>
       </div>
       <ol class="numbered">
         {
-          dict.useCases.items.map((item) => (
+          dict.value.chain.map((item) => (
             <li>
               <h3>{t(item.title)}</h3>
               <p>{t(item.text)}</p>
@@ -70,6 +61,52 @@ const [companiesTab, liquidatorsTab] = dict.process.tabs;
           ))
         }
       </ol>
+      <p class="usage">{t(dict.value.usage)}</p>
+    </div>
+  </div>
+</section>
+
+<section id="remuneration" aria-labelledby="remuneration-title">
+  <div class="container">
+    <div class="inner">
+      <div class="section-head rule">
+        <span class="label">{dict.economics.label}</span>
+        <h2 id="remuneration-title"><span class="sq" aria-hidden="true"></span><TwoTone text={t(dict.economics.title)} /></h2>
+        <p>{t(dict.economics.intro)}</p>
+      </div>
+      <dl class="qa-grid">
+        {
+          dict.economics.items.map((item) => (
+            <div>
+              <dt>{t(item.q)}</dt>
+              <dd>{t(item.a)}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="pour-qui" aria-labelledby="pour-qui-title">
+  <div class="container">
+    <div class="inner">
+      <div class="section-head rule">
+        <span class="label">{dict.useCases.label}</span>
+        <h2 id="pour-qui-title"><span class="sq" aria-hidden="true"></span><TwoTone text={t(dict.useCases.title)} /></h2>
+        <p>{t(dict.useCases.intro)}</p>
+      </div>
+      <div class="grid-cells grid-cells-4">
+        {
+          dict.useCases.items.map((item, i) => (
+            <article>
+              <span class="num" aria-hidden="true">{pad(i)}</span>
+              <h3>{t(item.title)}</h3>
+              <p>{t(item.text)}</p>
+            </article>
+          ))
+        }
+      </div>
     </div>
   </div>
 </section>
@@ -127,6 +164,7 @@ const [companiesTab, liquidatorsTab] = dict.process.tabs;
           dict.process.tabs.map((tab) => (
             <div class="tabpanel" role="tabpanel" id={`panel-${tab.id}`} aria-labelledby={`tab-${tab.id}`}>
               <h3 class="panel-title">{tab.label}</h3>
+              {'lead' in tab && tab.lead && <p class="panel-lead">{t(tab.lead)}</p>}
               <div class="panel-body">
                 <ol class="steps">
                   {tab.steps.map((s, i) => (
@@ -135,6 +173,12 @@ const [companiesTab, liquidatorsTab] = dict.process.tabs;
                       <div>
                         <h4>{t(s.title)}</h4>
                         <p>{t(s.text)}</p>
+                        {'detail' in s && s.detail && (
+                          <details class="step-detail">
+                            <summary>{'detailLabel' in tab ? tab.detailLabel : ''}</summary>
+                            <p>{t(s.detail)}</p>
+                          </details>
+                        )}
                       </div>
                     </li>
                   ))}
@@ -175,6 +219,7 @@ const [companiesTab, liquidatorsTab] = dict.process.tabs;
           ))
         }
       </div>
+      <p class="note">{t(dict.protection.restriction)}</p>
       {
         (dataProtocolPdf || site.protocolValidatedByLawyer) && (
           <div class="doc-links">
@@ -203,7 +248,7 @@ const [companiesTab, liquidatorsTab] = dict.process.tabs;
       <div>
         <p class="big">{t(dict.aiDevelopers.text)}</p>
         <ul class="checklist">{dict.aiDevelopers.items.map((item) => <li>{t(item)}</li>)}</ul>
-        <a class="btn btn-outline" href={mailto}>{dict.aiDevelopers.cta}</a>
+        <a class="btn btn-outline" href={mailtoPlain}>{dict.aiDevelopers.cta}</a>
       </div>
     </div>
   </div>

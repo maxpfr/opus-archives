@@ -262,18 +262,21 @@ section { padding-block: clamp(4.5rem, 10vw, 8.5rem); }
   .facts li { border-bottom: 0; padding-right: 1.5rem; }
 }
 
-/* Statement */
-.statement-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; }
-@media (min-width: 62rem) { .statement-grid { grid-template-columns: 1fr 1fr; gap: 2rem; } }
-.statement p.big {
-  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
-  line-height: 1.15;
-  letter-spacing: -0.035em;
-  font-weight: 400;
-  margin-bottom: 2.25rem;
-}
 
-.lead-copy { color: var(--muted); font-size: 1.1rem; max-width: 30rem; }
+.hero-lead { font-size: clamp(1.1rem, 1.6vw, 1.3rem); line-height: 1.45; max-width: 36rem; margin-bottom: 0.75rem; }
+.hero-sub { color: var(--muted); max-width: 36rem; margin-bottom: 2rem; }
+.usage { margin-top: 3rem; max-width: 50rem; font-size: clamp(1.15rem, 1.8vw, 1.4rem); line-height: 1.45; letter-spacing: -0.01em; font-weight: 400; }
+.panel-lead { font-size: clamp(1.3rem, 2.2vw, 1.75rem); line-height: 1.2; letter-spacing: -0.03em; font-weight: 400; max-width: 44rem; margin-bottom: 2.5rem; }
+.step-detail { margin-top: 0.6rem; }
+.step-detail summary { cursor: pointer; font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-text); }
+.step-detail p { margin-top: 0.5rem; }
+
+/* Q&A grid */
+.qa-grid { display: grid; grid-template-columns: 1fr; margin: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+@media (min-width: 52rem) { .qa-grid { grid-template-columns: 1fr 1fr; } }
+.qa-grid > div { padding: 2rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.qa-grid dt { font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-text); margin-bottom: 1rem; }
+.qa-grid dd { margin: 0; font-size: 1.15rem; line-height: 1.45; }
 
 /* Numbered columns */
 .numbered {
@@ -395,7 +398,7 @@ section { padding-block: clamp(4.5rem, 10vw, 8.5rem); }
   border-left: 1px solid var(--line);
 }
 @media (min-width: 40rem) { .grid-cells { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 62rem) { .grid-cells { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 62rem) { .grid-cells { grid-template-columns: repeat(3, 1fr); } .grid-cells-4 { grid-template-columns: repeat(4, 1fr); } }
 .grid-cells article {
   padding: 2rem;
   border-right: 1px solid var(--line);
@@ -498,3 +501,5 @@ section { padding-block: clamp(4.5rem, 10vw, 8.5rem); }
 .prose p { color: var(--muted); }
 .prose a { color: #fff; }
 .footer-address { font-style: normal; }
+
+.hero-art { align-self: start; }

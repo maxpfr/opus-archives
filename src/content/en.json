@@ -2,8 +2,8 @@
   "meta": {
     "lang": "en",
     "locale": "en_GB",
-    "title": "{brand} — Giving value to your company's written work",
-    "description": "{brand} acquires non-exclusive licences of use on the internal documentation of digital companies and turns it into anonymized datasets for training and evaluating AI models. We do not buy the software."
+    "title": "{brand} — Turn your technical documentation into revenue",
+    "description": "{brand} pays digital companies to use their technical documentation, tickets and code to train and evaluate AI models. Non-exclusive licence, company name removed, fixed payment."
   },
   "a11y": {
     "skip": "Skip to content",
@@ -12,67 +12,65 @@
     "external": "(opens in a new tab)"
   },
   "nav": {
-    "useCases": "Use cases",
+    "useCases": "Value",
     "scope": "Scope",
     "process": "Process",
-    "protection": "Data protection",
+    "protection": "Confidentiality",
     "faq": "Questions",
-    "contact": "Contact us"
+    "contact": "Get an assessment"
   },
   "hero": {
-    "eyebrow": "Licence of use · Anonymization · Training data",
-    "title": "Giving value to| your company's written work.",
-    "lead": "Wikis, tickets, specifications, code history: we acquire a non-exclusive licence of use on them, anonymize them, and they are used only to train and evaluate AI models. Securely and in full confidentiality.",
-    "pitch": "{brand} acquires licences of use on the internal documentation of digital companies.| Once anonymized, this content is used only to train and evaluate artificial intelligence models. We do not buy the software.",
+    "eyebrow": "Technical documentation · Licence of use · Training data",
+    "title": "Your teams have produced years of documentation.| It can still generate revenue.",
+    "lead": "{brand} pays digital companies to use some of their internal content (technical documentation, tickets, code and code reviews) to train and evaluate AI models.",
+    "sub": "You keep ownership of your content and your software. Scope, permitted uses and payment are set out in a contract.",
+    "ctaPrimary": "Get our archives assessed",
+    "ctaLiquidators": "Insolvency practitioners",
     "facts": [
-      "Non-exclusive licence",
-      "No transfer of the software",
-      "Messaging and customer data excluded",
-      "Raw exports deleted after delivery"
-    ],
-    "ctaCompanies": "For companies",
-    "ctaLiquidators": "For insolvency practitioners",
-    "pitchCta": "Our scope"
+      "Fixed payment, made at signature",
+      "Non-exclusive licence: you keep your content",
+      "Company name removed from the data",
+      "Messaging and customer data excluded"
+    ]
   },
   "useCases": {
-    "title": "Who it is for:| four situations, one approach",
-    "intro": "A digital company produces rich documentation every day that is only ever used internally. It can be given value at several points in the life of the company.",
+    "label": "Who it is for",
+    "title": "Four situations,| one approach",
+    "intro": "Documentation can be given value at several points in the life of a digital company.",
     "items": [
       {
         "title": "Operating company",
-        "text": "Documentation built up over years can generate revenue without giving up anything of your business: the licence is non-exclusive and you keep ownership of your content and your software."
+        "text": "Additional revenue, without giving up any of your business or your content."
       },
       {
         "title": "Voluntary wind-down",
-        "text": "In a dissolution or solvent liquidation, documentation becomes an asset with value, provided it is exported before online accounts are closed."
+        "text": "Dissolution or solvent liquidation: plan it before online accounts are closed."
       },
       {
         "title": "Divestment or product shutdown",
-        "text": "When a business line is sold or a product discontinued, its documentation can be valued separately, in line with any commitments made elsewhere."
+        "text": "The documentation of a discontinued product can be valued separately."
       },
       {
         "title": "Judicial liquidation",
-        "text": "With the liquidator and on authorization of the supervising judge: an asset usually worth nothing in the procedure becomes revenue for creditors."
+        "text": "With the liquidator and on authorization of the supervising judge."
       }
     ]
   },
   "scope": {
-    "title": "What we buy,| and what we do not",
-    "intro": "We acquire a non-exclusive licence of use on clearly defined written content. The scope is set out in writing before anything is signed.",
+    "title": "What the licence covers,| and what it excludes",
+    "intro": "The exact scope is agreed in writing before anything is signed. Depending on what is agreed, it can include:",
     "buy": {
-      "title": "What we license",
+      "title": "Included depending on scope",
       "items": [
         "Wikis and Notion or Confluence spaces",
         "Tickets: Jira, Linear, GitHub Issues",
-        "Specifications and design documents",
-        "Runbooks and postmortems",
-        "Code repository history, treated as data: commits, pull requests, reviews, links to tickets"
+        "Specifications, runbooks and postmortems",
+        "Repository source code, with its history: commits, pull requests and reviews"
       ]
     },
     "notBuy": {
-      "title": "What we exclude",
+      "title": "Always excluded",
       "items": [
-        "The software itself, the brand and the domain names",
         "Messaging: Slack, Teams, email",
         "Customer files and production databases",
         "HR and legal spaces",
@@ -80,7 +78,7 @@
         "Code written for clients or under a third-party licence"
       ]
     },
-    "note": "Ownership and exploitation of the software, brand and domain names remain entirely with the company, which stays free to sell them. We acquire no right to run, distribute or commercialize the software, nor to build a competing product."
+    "note": "Source code can therefore be part of the scope. The licence does not transfer its ownership: it only permits its use to train and evaluate AI models. It grants no right to run, distribute or commercialize your software. Your brand and domain names are not affected, and you remain free to sell the software."
   },
   "process": {
     "title": "How it works",
@@ -93,156 +91,168 @@
         "steps": [
           {
             "title": "First conversation",
-            "text": "Initial contact and short qualification: tools used, type of content, specific constraints."
+            "text": "You tell us about your business, the tools you use and the period your archives cover."
           },
           {
             "title": "Inventory under NDA",
             "text": "Review of tools, volume and age of the content, under a non-disclosure agreement."
           },
           {
-            "title": "Written proposal",
-            "text": "A proposal setting out the exact scope of the licensed content and the list of exclusions."
+            "title": "Assessment and proposal",
+            "text": "A written proposal setting out scope, exclusions and amount, or a note that a licence is not relevant."
           },
           {
-            "title": "Licence agreement",
-            "text": "Signature of a non-exclusive licence of use, limited to training and evaluating AI models."
+            "title": "Agreement and payment",
+            "text": "Signature of the non-exclusive licence of use; the fixed amount is paid at signature."
           },
           {
-            "title": "Export and anonymization",
-            "text": "Export of the content, anonymization, then deletion of the raw exports."
+            "title": "Export and preparation",
+            "text": "Export of the content, removal of identifying elements, then deletion of the raw exports."
           }
         ],
         "aside": {
           "title": "What you get",
           "items": [
-            "Revenue from an asset that already exists",
-            "No transfer of ownership: your content and your software remain yours",
+            "Revenue from content you already own",
+            "Ownership of your content and your software, unchanged",
             "Scope and exclusions agreed in writing",
-            "Export and anonymization carried out by us"
+            "Export and preparation carried out by us"
           ]
         }
       },
       {
         "id": "liquidators",
         "label": "Insolvency practitioners",
+        "lead": "Before closing the Notion, Jira or GitHub accounts, check whether their content can be given value.",
         "steps": [
           {
-            "title": "Case identification",
-            "text": "Identification of the company concerned and short qualification with the practitioner's office."
+            "title": "Case referral",
+            "text": "You tell us the company and which online tools are still active; we quickly assess the archive's potential."
+          },
+          {
+            "title": "Protective export if needed",
+            "text": "If unpaid subscriptions put the accounts at risk, we can run a protective export before they are closed."
           },
           {
             "title": "Inventory under NDA",
-            "text": "Review of tools, volume and age of the content, under a non-disclosure agreement."
+            "text": "Review of tools, volume and age of the content."
           },
           {
             "title": "Firm offer",
-            "text": "Offer in the usual French format: 10% deposit by bank cheque, bank certificate of funds, declaration of independence (art. L642-3 of the French Commercial Code), no conditions precedent."
+            "text": "Offer in the usual format for asset sales, with no conditions precedent.",
+            "detail": "10% deposit by bank cheque, bank certificate of funds, declaration of independence (art. L642-3 of the French Commercial Code)."
           },
           {
-            "title": "Authorization and deed",
-            "text": "Authorization by the supervising judge (juge-commissaire), then signature of the deed."
-          },
-          {
-            "title": "Export and anonymization",
-            "text": "Export of the content, anonymization, then deletion of the raw exports."
+            "title": "Authorization, deed and preparation",
+            "text": "Authorization by the supervising judge, signature of the deed, then export, preparation and deletion of raw exports."
           }
         ],
+        "detailLabel": "Offer details",
         "aside": {
           "title": "For the procedure",
           "items": [
-            "An asset usually worth nothing in the procedure becomes revenue",
-            "Export, anonymization and deed costs are borne by us",
-            "A protective export can be run before online accounts are closed for unpaid subscriptions",
-            "The software, brand and domain names stay in the estate and remain free to be sold"
+            "An additional source of proceeds, separate from the software, brand and domain names",
+            "Those assets stay in the estate and remain free to be sold",
+            "The export and preparation work set out in our offer is at our expense, as are deed costs"
           ]
         }
       }
     ]
   },
   "protection": {
-    "title": "Data protection",
-    "intro": "Confidentiality is a precondition of the business. Every export follows the same protocol.",
+    "label": "Confidentiality",
+    "title": "Who will see what| of your company?",
+    "intro": "Prepared content is passed, under licence, to teams that train and evaluate AI models. Here is what they receive, and what they do not.",
     "items": [
       {
-        "title": "Pseudonymized authors",
-        "text": "Authors' names, usernames and addresses are replaced with pseudonyms."
+        "title": "Your company name is removed",
+        "text": "Your company name and brands are removed from the content: recipients do not know which company it comes from."
       },
       {
-        "title": "Secrets removed",
-        "text": "Keys, tokens and technical credentials are detected and removed."
+        "title": "Authors are pseudonymized",
+        "text": "Staff names, usernames and addresses are replaced with consistent pseudonyms, keeping who replied to whom without revealing who they are."
       },
       {
-        "title": "Personal data removed",
+        "title": "Customers and personal data removed",
         "text": "Customer names and personal data found in the text are removed."
       },
       {
-        "title": "Raw exports deleted",
-        "text": "Original exports are deleted once the anonymized data has been delivered."
+        "title": "Technical secrets removed",
+        "text": "Keys, tokens and technical credentials are detected and removed."
       },
       {
-        "title": "Limited, documented access",
-        "text": "Only the people who need it can access exports, and every access is logged."
+        "title": "What cannot be cleaned is left out",
+        "text": "Content that cannot be sufficiently stripped of identifying elements is not passed on."
+      },
+      {
+        "title": "Raw exports deleted, access limited",
+        "text": "Original exports are deleted after delivery. Only the people who need them have access, and every access is logged."
       }
     ],
+    "restriction": "Recipients receive a licence limited to training and evaluating models. They obtain no right to run, distribute or commercialize your software.",
     "pdf": "Download the data processing protocol (PDF)",
     "lawyer": "Protocol validated by a lawyer."
   },
   "aiDevelopers": {
-    "title": "For AI developers",
-    "text": "We build datasets drawn from real work: documentation, tickets, code reviews and the links between them. They are designed for training, evaluation and building reinforcement-learning environments.",
+    "label": "Buyers",
+    "title": "For teams that train| and evaluate AI models",
+    "text": "Real software development histories, with rights cleared by a written licence.",
     "items": [
-      "Rights-cleared: every dataset rests on a written licence of use",
-      "Anonymized under a documented protocol",
-      "Traceable: the provenance of each dataset is tied to its licence"
+      "Linked sequences: ticket, specification, code change and review, in their real order",
+      "Executable environments where the history allows: the agent starts from the repository state before a change, receives the original request, and its proposal is checked against the project's tests",
+      "Traceable provenance: each dataset is tied to its licence, with the agreed scope and exclusions",
+      "Content prepared under one protocol: company not identified, authors pseudonymized, secrets and personal data removed"
     ],
-    "cta": "Write to the team"
+    "cta": "Request a presentation"
   },
   "faq": {
     "title": "Frequently asked questions",
     "items": [
       {
-        "q": "Do you buy the software?",
-        "a": "No. We only acquire a non-exclusive licence of use on the documentation. The software, brand and domain names remain the company's property, and it stays free to sell them. We acquire no right to run, distribute or commercialize the software."
+        "q": "Do you take our source code?",
+        "a": "It can be part of the scope, if you agree. The licence does not take away your ownership and only permits its use to train and evaluate AI models, with no right to run, distribute or commercialize the software."
       },
       {
-        "q": "Do you collect employees' messaging or emails?",
-        "a": "No. Slack, Teams and email are excluded from the scope, as are HR and legal spaces, customer files and production databases."
+        "q": "What rights do we need to hold?",
+        "a": "You must hold the rights to the licensed content. That is why code written for clients or under a third-party licence is excluded. This is checked during the inventory."
       },
       {
-        "q": "What happens to personal data?",
-        "a": "Authors are pseudonymized, customer names and personal data found in the text are removed, and raw exports are deleted after delivery."
+        "q": "How is payment calculated?",
+        "a": "It depends on usable volume, technical depth, continuity of the history and the rights available. It is a fixed amount, written into the agreement and paid at signature."
       },
       {
-        "q": "What is the content used for?",
-        "a": "Only to train and evaluate artificial intelligence models. It is not used to build a competing product."
+        "q": "Who receives the content?",
+        "a": "Teams that train and evaluate AI models, under licence. They receive content from which your company name, authors' identities, personal data and technical secrets have been removed."
+      },
+      {
+        "q": "Do you collect employees' messaging?",
+        "a": "No. Slack, Teams and email are always excluded, as are HR and legal spaces, customer files and production databases."
       },
       {
         "q": "Is the licence exclusive?",
-        "a": "No. It is non-exclusive: the company keeps its content and can continue to use it as it wishes."
-      },
-      {
-        "q": "The online accounts are about to be closed. Is it too late?",
-        "a": "Not necessarily. In a liquidation, we can run a protective export before accounts are closed for unpaid subscriptions. Contact us as early as possible."
+        "a": "No. You keep your content and can continue to use it as you wish."
       }
     ]
   },
   "about": {
     "title": "About us",
     "lines": [
-      "{brand} is operated by Opus MP, a French SASU registered under SIREN 991 303 975, with its registered office at 35 rue Vital, 75016 Paris.",
-      "It is led by {founder}, a graduate of École polytechnique and HEC, former project leader at Boston Consulting Group and founder of a software development agency that grew to 30 people."
+      "{brand} is led by {founder}, a former project leader at Boston Consulting Group and founder of a software development company. That experience gave him first-hand knowledge of what technical teams produce: specifications, tickets, documentation and code reviews.",
+      "Graduate of École polytechnique and HEC.",
+      "{brand} is operated by Opus MP, a French SASU registered under SIREN 991 303 975, 35 rue Vital, 75016 Paris."
     ],
     "linkedin": "LinkedIn profile"
   },
   "contact": {
-    "title": "Let's talk about your situation.",
-    "text": "Insolvency practitioner, company director or AI developer: tell us briefly about your situation. We reply personally.",
-    "email": "Send an email",
-    "emailSubject": "Enquiry — {brand}",
+    "title": "Could your documentation| interest {brand}?",
+    "text": "Tell us about your business, the tools you use and the period your archives cover. This first information lets us tell you whether an assessment makes sense.",
+    "email": "Get our archives assessed",
+    "emailSubject": "Archive assessment — {brand}",
+    "emailBody": "Company's business:\nTools used (Notion, Confluence, Jira, GitHub…):\nPeriod covered by the archives:\nSituation (operating, wind-down, divestment, insolvency):\n",
     "phone": "Phone:",
     "notice": "Information you send us by email is used only to answer your request.",
-    "presentationPdf": "Overview of our approach (PDF)",
-    "noticeLink": "See our privacy policy"
+    "noticeLink": "See our privacy policy",
+    "presentationPdf": "Overview of our approach (PDF)"
   },
   "footer": {
     "entity": "{brand} is operated by Opus MP, SASU — SIREN 991 303 975 — 35 rue Vital, 75016 Paris, France.",
@@ -353,15 +363,62 @@
     "back": "Back to home"
   },
   "labels": {
-    "useCases": "Use cases",
+    "useCases": "Who it is for",
     "buy": "Included",
     "notBuy": "Excluded",
     "process": "Process",
     "protection": "Confidentiality",
-    "ai": "AI developers",
+    "ai": "Buyers",
     "faq": "Questions",
     "about": "About",
     "contact": "Contact",
     "step": "Step"
+  },
+  "value": {
+    "label": "Why this content has value",
+    "title": "What has value| is the path from a problem to its resolution.",
+    "intro": "On its own, an internal document is worth little. Linked together, your tools show how a team actually worked on real situations.",
+    "chain": [
+      {
+        "title": "The ticket",
+        "text": "describes a problem or a request, with its context."
+      },
+      {
+        "title": "The specification",
+        "text": "sets out the intended solution and its constraints."
+      },
+      {
+        "title": "The code",
+        "text": "shows the change that was actually made."
+      },
+      {
+        "title": "The review",
+        "text": "shows the corrections, trade-offs and sign-off."
+      }
+    ],
+    "usage": "These sequences are used to train and test AI models on software development tasks: understanding a request, finding the relevant context, proposing a change and checking the result. That is why the links between tickets, documents and code matter as much as the content itself."
+  },
+  "economics": {
+    "label": "Payment",
+    "title": "How we assess| your content",
+    "intro": "There is no price list: each body of documentation is assessed case by case.",
+    "items": [
+      {
+        "q": "What we look for",
+        "a": "Real software projects, several years of history, and above all links between tools: tickets connected to specifications, code and reviews."
+      },
+      {
+        "q": "What drives value",
+        "a": "Usable volume, the technical depth of the exchanges, continuity of the history and the rights you hold over the content."
+      },
+      {
+        "q": "How you are paid",
+        "a": "A fixed amount, written into the licence agreement and paid at signature."
+      },
+      {
+        "q": "If the archive is not a fit",
+        "a": "We do not make an offer on every case. The assessment may conclude that a licence is not relevant; we will tell you plainly."
+      }
+    ]
   }
 }
