@@ -1,0 +1,10 @@
+---
+/** Renders "Primary part| muted part" with the second half in the muted heading tone. */
+interface Props {
+  text: string;
+}
+const [strong, ...rest] = Astro.props.text.split('|');
+const muted = rest.join('|');
+---
+
+{strong}{muted && <span class="muted">{muted}</span>}

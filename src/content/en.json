@@ -21,20 +21,21 @@
   },
   "hero": {
     "eyebrow": "Licence of use · Anonymization · Training data",
-    "title": "Giving value to your company's written work.",
+    "title": "Giving value to| your company's written work.",
     "lead": "Wikis, tickets, specifications, code history: we acquire a non-exclusive licence of use on them, anonymize them, and they are used only to train and evaluate AI models. Securely and in full confidentiality.",
-    "pitch": "{brand} acquires licences of use on the internal documentation of digital companies. Once anonymized, this content is used only to train and evaluate artificial intelligence models. We do not buy the software.",
-    "cta": "Contact us",
-    "secondary": "See the process",
+    "pitch": "{brand} acquires licences of use on the internal documentation of digital companies.| Once anonymized, this content is used only to train and evaluate artificial intelligence models. We do not buy the software.",
     "facts": [
       "Non-exclusive licence",
       "No transfer of the software",
       "Messaging and customer data excluded",
       "Raw exports deleted after delivery"
-    ]
+    ],
+    "ctaCompanies": "For companies",
+    "ctaLiquidators": "For insolvency practitioners",
+    "pitchCta": "Our scope"
   },
   "useCases": {
-    "title": "Who it is for",
+    "title": "Who it is for:| four situations, one approach",
     "intro": "A digital company produces rich documentation every day that is only ever used internally. It can be given value at several points in the life of the company.",
     "items": [
       {
@@ -56,7 +57,7 @@
     ]
   },
   "scope": {
-    "title": "What we buy, and what we do not",
+    "title": "What we buy,| and what we do not",
     "intro": "We acquire a non-exclusive licence of use on clearly defined written content. The scope is set out in writing before anything is signed.",
     "buy": {
       "title": "What we license",
@@ -234,7 +235,7 @@
     "linkedin": "LinkedIn profile"
   },
   "contact": {
-    "title": "Contact us",
+    "title": "Let's talk about your situation.",
     "text": "Insolvency practitioner, company director or AI developer: tell us briefly about your situation. We reply personally.",
     "email": "Send an email",
     "emailSubject": "Enquiry — {brand}",
@@ -350,5 +351,17 @@
     "title": "Page not found",
     "text": "This page does not exist or has been moved.",
     "back": "Back to home"
+  },
+  "labels": {
+    "useCases": "Use cases",
+    "buy": "Included",
+    "notBuy": "Excluded",
+    "process": "Process",
+    "protection": "Confidentiality",
+    "ai": "AI developers",
+    "faq": "Questions",
+    "about": "About",
+    "contact": "Contact",
+    "step": "Step"
   }
 }

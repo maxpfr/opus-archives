@@ -21,20 +21,21 @@
   },
   "hero": {
     "eyebrow": "Licence d'usage · Anonymisation · Données d'entraînement",
-    "title": "Valoriser la production écrite de votre entreprise.",
+    "title": "Valoriser la production écrite| de votre entreprise.",
     "lead": "Wikis, tickets, spécifications, historique de code : nous en acquérons une licence d'usage non exclusive, nous les anonymisons, et ils servent uniquement à entraîner et évaluer des modèles d'IA. En toute sécurité et en toute confidentialité.",
-    "pitch": "{brand} acquiert des licences d'usage sur la documentation interne d'entreprises du numérique. Une fois anonymisés, ces contenus servent uniquement à entraîner et évaluer des modèles d'intelligence artificielle. Nous n'achetons pas le logiciel.",
-    "cta": "Nous contacter",
-    "secondary": "Voir le processus",
+    "pitch": "{brand} acquiert des licences d'usage sur la documentation interne d'entreprises du numérique.| Une fois anonymisés, ces contenus servent uniquement à entraîner et évaluer des modèles d'intelligence artificielle. Nous n'achetons pas le logiciel.",
     "facts": [
       "Licence non exclusive",
       "Pas de reprise du logiciel",
       "Messageries et données clients exclues",
       "Exports bruts supprimés après livraison"
-    ]
+    ],
+    "ctaCompanies": "Pour les entreprises",
+    "ctaLiquidators": "Pour les mandataires",
+    "pitchCta": "Notre périmètre"
   },
   "useCases": {
-    "title": "Pour qui",
+    "title": "Pour qui| : quatre situations, une même démarche",
     "intro": "Une entreprise du numérique produit chaque jour une documentation riche qui ne sert qu'en interne. Elle peut être valorisée à plusieurs moments de la vie de l'entreprise.",
     "items": [
       {
@@ -56,7 +57,7 @@
     ]
   },
   "scope": {
-    "title": "Ce que nous achetons, ce que nous n'achetons pas",
+    "title": "Ce que nous achetons,| ce que nous n'achetons pas",
     "intro": "Nous acquérons une licence d'usage non exclusive sur des contenus écrits précis. Le périmètre est fixé par écrit avant toute signature.",
     "buy": {
       "title": "Ce que nous licencions",
@@ -234,7 +235,7 @@
     "linkedin": "Profil LinkedIn"
   },
   "contact": {
-    "title": "Nous contacter",
+    "title": "Parlons de votre situation.",
     "text": "Mandataire, dirigeant ou développeur d'IA : décrivez-nous brièvement votre situation. Nous répondons personnellement.",
     "email": "Écrire un e-mail",
     "emailSubject": "Prise de contact — {brand}",
@@ -350,5 +351,17 @@
     "title": "Page introuvable",
     "text": "Cette page n'existe pas ou a été déplacée.",
     "back": "Retour à l'accueil"
+  },
+  "labels": {
+    "useCases": "Cas d'usage",
+    "buy": "Inclus",
+    "notBuy": "Exclus",
+    "process": "Processus",
+    "protection": "Confidentialité",
+    "ai": "Développeurs d'IA",
+    "faq": "Questions",
+    "about": "À propos",
+    "contact": "Contact",
+    "step": "Étape"
   }
 }

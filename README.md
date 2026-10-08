@@ -1,7 +1,7 @@
 # Opus Archives — site vitrine
 
 One-pager statique (FR/EN) + mentions légales + politique de confidentialité.
-Astro 7, aucun JavaScript en dehors des onglets du processus, aucun cookie, aucun traceur, polices auto-hébergées.
+Astro 7, design sombre (fond noir, accent violet, libellés monospace), aucun JavaScript en dehors des onglets du processus, aucun cookie, aucun traceur, polices Geist et Geist Mono auto-hébergées.
 
 ## Démarrer
 
@@ -24,7 +24,7 @@ Node 20+ requis.
 | Tous les textes FR | `src/content/fr.json` |
 | Tous les textes EN | `src/content/en.json` |
 | Sections de la page d'accueil | `src/components/Home.astro` |
-| Styles (couleurs, typo, mode sombre) | `src/styles/global.css` |
+| Styles (couleurs, typo) | `src/styles/global.css` |
 | PDF à télécharger | `public/docs/` puis `site.config.ts` > `documents` |
 
 Les textes peuvent contenir `{brand}`, `{email}`, `{founder}`… remplacés à la compilation depuis `site.config.ts`.

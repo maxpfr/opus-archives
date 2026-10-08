@@ -1,0 +1,63 @@
+---
+/**
+ * Decorative pixel grid, generated at build time: stacked document pages whose text lines are
+ * drawn as pixels, a share of them "redacted" in the accent colour (anonymization motif).
+ */
+const COLS = 48;
+const ROWS = 44;
+const CELL = 10;
+
+let seed = 7;
+const rand = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+
+type Cell = { x: number; y: number; tone: 'line' | 'redact' | 'edge' };
+const cells: Cell[] = [];
+const pages = [
+  { x: 4, y: 3, w: 22, h: 30 },
+  { x: 14, y: 9, w: 22, h: 30 },
+  { x: 24, y: 15, w: 21, h: 27 },
+];
+const occupied = new Set<string>();
+const put = (x: number, y: number, tone: Cell['tone']) => {
+  const k = `${x},${y}`;
+  if (x < 0 || y < 0 || x >= COLS || y >= ROWS) return;
+  if (occupied.has(k)) cells.splice(cells.findIndex((c) => c.x === x && c.y === y), 1);
+  occupied.add(k);
+  cells.push({ x, y, tone });
+};
+for (const p of pages) {
+  for (let x = p.x; x < p.x + p.w; x++) for (let y = p.y; y < p.y + p.h; y++) occupied.delete(`${x},${y}`);
+  for (let i = cells.length - 1; i >= 0; i--) {
+    const c = cells[i];
+    if (c.x >= p.x && c.x < p.x + p.w && c.y >= p.y && c.y < p.y + p.h) cells.splice(i, 1);
+  }
+  for (let x = p.x; x < p.x + p.w; x++) {
+    put(x, p.y, 'edge');
+    put(x, p.y + p.h - 1, 'edge');
+  }
+  for (let y = p.y; y < p.y + p.h; y++) {
+    put(p.x, y, 'edge');
+    put(p.x + p.w - 1, y, 'edge');
+  }
+  for (let y = p.y + 3; y < p.y + p.h - 2; y += 2) {
+    const len = Math.floor((p.w - 6) * (0.45 + rand() * 0.55));
+    let x = p.x + 3;
+    while (x < p.x + 3 + len) {
+      const word = 2 + Math.floor(rand() * 4);
+      const tone = rand() < 0.22 ? 'redact' : 'line';
+      for (let i = 0; i < word && x < p.x + 3 + len; i++, x++) put(x, y, tone);
+      x++;
+    }
+  }
+}
+---
+
+<svg class="pixel-art" viewBox={`0 0 ${COLS * CELL} ${ROWS * CELL}`} aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="pixel-grid" width={CELL} height={CELL} patternUnits="userSpaceOnUse">
+      <path d={`M ${CELL} 0 L 0 0 0 ${CELL}`} fill="none" stroke="currentColor" stroke-width="0.6" />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#pixel-grid)" class="pixel-grid" />
+  {cells.map((c) => <rect class={`px px-${c.tone}`} x={c.x * CELL + 1} y={c.y * CELL + 1} width={CELL - 2} height={CELL - 2} />)}
+</svg>

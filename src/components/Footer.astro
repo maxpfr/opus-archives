@@ -1,4 +1,5 @@
 ---
+import { site } from '../../site.config';
 import { useTranslations, routes, type Lang } from '../i18n';
 
 interface Props {
@@ -8,14 +9,27 @@ interface Props {
 const { lang } = Astro.props;
 const { dict, t } = useTranslations(lang);
 const r = routes[lang];
+const { legal } = site;
 ---
 
 <footer class="site-footer">
   <div class="container">
-    <p>{t(dict.footer.entity)}</p>
-    <ul>
-      <li><a href={r.legal}>{dict.footer.legal}</a></li>
-      <li><a href={r.privacy}>{dict.footer.privacy}</a></li>
-    </ul>
+    <div class="inner">
+      <div class="footer-grid">
+        <div>
+          <a class="wordmark" href={r.home}>{site.brand}</a>
+        </div>
+        <address class="footer-address">
+          <p>{legal.companyName}, {legal.legalForm}</p>
+          <p>{legal.streetAddress}</p>
+          <p>{legal.postalCode} {legal.city}</p>
+        </address>
+        <ul>
+          <li><a href={r.legal}>{dict.footer.legal}</a></li>
+          <li><a href={r.privacy}>{dict.footer.privacy}</a></li>
+        </ul>
+      </div>
+      <p class="footer-legal">{t(dict.footer.entity)}</p>
+    </div>
   </div>
 </footer>
