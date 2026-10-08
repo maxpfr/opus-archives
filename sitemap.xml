@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://{{DOMAIN}}/opus-archives/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://{{DOMAIN}}/opus-archives/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://{{DOMAIN}}/opus-archives/en/"/>
+  </url>
+  <url>
+    <loc>https://{{DOMAIN}}/opus-archives/mentions-legales/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://{{DOMAIN}}/opus-archives/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://{{DOMAIN}}/opus-archives/en/legal-notice/"/>
+  </url>
+  <url>
+    <loc>https://{{DOMAIN}}/opus-archives/confidentialite/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://{{DOMAIN}}/opus-archives/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://{{DOMAIN}}/opus-archives/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://{{DOMAIN}}/opus-archives/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://{{DOMAIN}}/opus-archives/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://{{DOMAIN}}/opus-archives/en/"/>
+  </url>
+  <url>
+    <loc>https://{{DOMAIN}}/opus-archives/en/legal-notice/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://{{DOMAIN}}/opus-archives/mentions-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://{{DOMAIN}}/opus-archives/en/legal-notice/"/>
+  </url>
+  <url>
+    <loc>https://{{DOMAIN}}/opus-archives/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://{{DOMAIN}}/opus-archives/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://{{DOMAIN}}/opus-archives/en/privacy/"/>
+  </url>
+</urlset>
