@@ -1,6 +1,6 @@
 ---
 import { site, isPlaceholder } from '../../site.config';
-import { useTranslations, routes, type Lang } from '../i18n';
+import { useTranslations, routes, withBase, type Lang } from '../i18n';
 
 interface Props {
   lang: Lang;
@@ -12,7 +12,8 @@ const { dict, t } = useTranslations(lang);
 const mailto = `mailto:${site.email}?subject=${encodeURIComponent(t(dict.contact.emailSubject))}`;
 const showPhone = site.phone !== '';
 const showLinkedin = !isPlaceholder(site.founder.linkedin);
-const { dataProtocolPdf, presentationPdf } = site.documents;
+const dataProtocolPdf = site.documents.dataProtocolPdf && withBase(site.documents.dataProtocolPdf);
+const presentationPdf = site.documents.presentationPdf && withBase(site.documents.presentationPdf);
 const pad = (i: number) => String(i + 1).padStart(2, '0');
 ---
 

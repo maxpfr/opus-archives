@@ -7,10 +7,13 @@ export type Dict = typeof fr;
 
 const dicts: Record<Lang, Dict> = { fr, en };
 
+/** Prefixes a root-relative path with the configured base path (see astro.config.mjs). */
+export const withBase = (path: string) => import.meta.env.BASE_URL.replace(/\/$/, '') + path;
+
 export const routes = {
-  fr: { home: '/', legal: '/mentions-legales/', privacy: '/confidentialite/' },
-  en: { home: '/en/', legal: '/en/legal-notice/', privacy: '/en/privacy/' },
-} as const;
+  fr: { home: withBase('/'), legal: withBase('/mentions-legales/'), privacy: withBase('/confidentialite/') },
+  en: { home: withBase('/en/'), legal: withBase('/en/legal-notice/'), privacy: withBase('/en/privacy/') },
+};
 
 const { legal } = site;
 const address = `${legal.streetAddress}, ${legal.postalCode} ${legal.city}`;

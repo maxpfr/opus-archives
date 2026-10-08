@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { useTranslations } from '../i18n';
+import { useTranslations, routes } from '../i18n';
 
 const { dict, t } = useTranslations('fr');
 const en = useTranslations('en').dict;
@@ -11,8 +11,8 @@ const en = useTranslations('en').dict;
     <article class="prose">
       <h1>{dict.notFound.title}</h1>
       <p>{t(dict.notFound.text)}</p>
-      <p><a href="/">{dict.notFound.back}</a></p>
-      <p lang="en"><a href="/en/">{en.notFound.back}</a></p>
+      <p><a href={routes.fr.home}>{dict.notFound.back}</a></p>
+      <p lang="en"><a href={routes.en.home}>{en.notFound.back}</a></p>
     </article>
   </div>
 </Base>
